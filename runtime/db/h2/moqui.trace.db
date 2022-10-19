@@ -1,0 +1,9 @@
+2022-10-13 22:02:55 jdbc[303]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT COUNT(*)  FROM [*]"; expected "identifier"; SQL statement:
+SELECT COUNT(*)  FROM  [42001-212]
+2022-10-13 22:03:04 jdbc[303]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT COUNT(*)  FROM [*]"; expected "identifier"; SQL statement:
+SELECT COUNT(*)  FROM  [42001-212]
+2022-10-13 22:03:59 jdbc[303]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT COUNT(*)  FROM [*]"; expected "identifier"; SQL statement:
+SELECT COUNT(*)  FROM  [42001-212]

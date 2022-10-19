@@ -1,0 +1,205 @@
+--- 2022-10-18 02:15:59.614 [           main] ERROR           org.moqui.impl.context.ElasticFacadeImpl [] []
+ Error initializing ElasticClient for cluster default: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information
+--- 2022-10-18 02:15:59.841 [           main] ERROR      org.moqui.impl.webapp.ElasticRequestLogFilter [] []
+ In ElasticRequestLogFilter init could not find ElasticClient with name logger or default, not starting
+--- 2022-10-18 02:22:36.288 [tp1700721442-25] ERROR                   org.moqui.impl.actions.XmlAction [] []
+ Error running groovy script (org.moqui.entity.EntityNotFoundException: No definition found for entity-name [moqui.entity]): 
+1 : import static org.moqui.util.ObjectUtilities.*
+2 : import static org.moqui.util.CollectionUtilities.*
+3 : import static org.moqui.util.StringUtilities.*
+4 : import java.sql.Timestamp
+5 : // these are in the context by default: ExecutionContext ec, Map<String, Object> context, Map<String, Object> result
+6 : 
+7 : // begin inline script
+8 : org.moqui.impl.util.RestSchemaUtil.handleServiceRestSwagger(ec, sri.screenUrlInfo.extraPathNameList, "/rest/s1")
+9 : // end inline script
+10 : // make sure the last statement is not considered the return value
+11 : return;
+
+
+--- 2022-10-18 02:22:36.297 [tp1700721442-25] ERROR                 org.moqui.impl.webapp.MoquiServlet [] []
+ Internal error processing request: org.moqui.entity.EntityNotFoundException: No definition found for entity-name [moqui.entity]
+org.moqui.entity.EntityNotFoundException: No definition found for entity-name [moqui.entity]
+	at org.moqui.impl.entity.EntityFacadeImpl.loadEntityDefinition(EntityFacadeImpl.groovy:653) ~[moqui_temp17930561684967606306WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.entity.EntityFacadeImpl.getEntityDefinition(EntityFacadeImpl.groovy:1109) ~[moqui_temp17930561684967606306WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.RestApi$MethodEntity.addToSwaggerMap(RestApi.groovy:412) ~[moqui_temp17930561684967606306WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.RestApi$PathNode.addToSwaggerMap(RestApi.groovy:692) ~[moqui_temp17930561684967606306WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.RestApi$PathNode.addToSwaggerMap(RestApi.groovy:699) ~[moqui_temp17930561684967606306WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.RestApi.getSwaggerMap(RestApi.groovy:171) ~[moqui_temp17930561684967606306WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.util.RestSchemaUtil.handleServiceRestSwagger(RestSchemaUtil.groovy:846) ~[moqui_temp17930561684967606306WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at component___webroot_screen_webroot_rest_xml_transition_service_swagger_actions.run(component___webroot_screen_webroot_rest_xml_transition_service_swagger_actions:8) ~[?:?]
+	at org.moqui.impl.actions.XmlAction.run(XmlAction.java:67) ~[moqui_temp17930561684967606306WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenDefinition$TransitionItem.run(ScreenDefinition.groovy:987) ~[moqui_temp17930561684967606306WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:749) ~[moqui_temp17930561684967606306WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp17930561684967606306WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.internalRender(ScreenRenderImpl.groovy:454) ~[moqui_temp17930561684967606306WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.render(ScreenRenderImpl.groovy:170) ~[moqui_temp17930561684967606306WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.webapp.MoquiServlet.service(MoquiServlet.groovy:118) ~[moqui_temp17930561684967606306WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750) ~[moqui_temp1053162873149638034WEB-INF_lib_javax.servlet-api-4.0.1.jar.:4.0.1]
+	at org.moqui.impl.webapp.ElasticRequestLogFilter.doFilter(ElasticRequestLogFilter.groovy:96) ~[moqui_temp17930561684967606306WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+--- 2022-10-18 02:24:12.224 [tp1700721442-18] ERROR                   org.moqui.impl.actions.XmlAction [] []
+ Error running groovy script (java.lang.IllegalArgumentException: Entity moqui.entity not found): 
+1 : import static org.moqui.util.ObjectUtilities.*
+2 : import static org.moqui.util.CollectionUtilities.*
+3 : import static org.moqui.util.StringUtilities.*
+4 : import java.sql.Timestamp
+5 : // these are in the context by default: ExecutionContext ec, Map<String, Object> context, Map<String, Object> result
+6 : 
+7 : // begin inline script
+8 : org.moqui.impl.util.RestSchemaUtil.handleServiceRestSwagger(ec, sri.screenUrlInfo.extraPathNameList, "/rest/s1")
+9 : // end inline script
+10 : // make sure the last statement is not considered the return value
+11 : return;
+
+
+--- 2022-10-18 02:24:12.227 [tp1700721442-18] ERROR                 org.moqui.impl.webapp.MoquiServlet [] []
+ Internal error processing request: java.lang.IllegalArgumentException: Entity moqui.entity not found
+java.lang.IllegalArgumentException: Entity moqui.entity not found
+	at org.moqui.impl.service.RestApi$MethodEntity.addToSwaggerMap(RestApi.groovy:413) ~[moqui_temp17930561684967606306WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.RestApi$PathNode.addToSwaggerMap(RestApi.groovy:692) ~[moqui_temp17930561684967606306WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.RestApi$PathNode.addToSwaggerMap(RestApi.groovy:699) ~[moqui_temp17930561684967606306WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.RestApi.getSwaggerMap(RestApi.groovy:171) ~[moqui_temp17930561684967606306WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.util.RestSchemaUtil.handleServiceRestSwagger(RestSchemaUtil.groovy:846) ~[moqui_temp17930561684967606306WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.util.RestSchemaUtil$handleServiceRestSwagger.call(Unknown Source) ~[?:?]
+	at component___webroot_screen_webroot_rest_xml_transition_service_swagger_actions.run(component___webroot_screen_webroot_rest_xml_transition_service_swagger_actions:8) ~[?:?]
+	at org.moqui.impl.actions.XmlAction.run(XmlAction.java:67) ~[moqui_temp17930561684967606306WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenDefinition$TransitionItem.run(ScreenDefinition.groovy:987) ~[moqui_temp17930561684967606306WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:749) ~[moqui_temp17930561684967606306WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp17930561684967606306WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.internalRender(ScreenRenderImpl.groovy:454) ~[moqui_temp17930561684967606306WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.render(ScreenRenderImpl.groovy:170) ~[moqui_temp17930561684967606306WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.webapp.MoquiServlet.service(MoquiServlet.groovy:118) ~[moqui_temp17930561684967606306WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750) ~[moqui_temp1053162873149638034WEB-INF_lib_javax.servlet-api-4.0.1.jar.:4.0.1]
+	at org.eclipse.jetty.servlet.ServletHolder$NotAsync.service(ServletHolder.java:1410) ~[moqui_temp11993904401664195510execlib_jetty-servlet-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:764) ~[moqui_temp11993904401664195510execlib_jetty-servlet-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.servlet.ServletHandler$ChainEnd.doFilter(ServletHandler.java:1630) ~[moqui_temp11993904401664195510execlib_jetty-servlet-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.websocket.servlet.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:170) ~[moqui_temp15439127805076710089execlib_websocket-servlet-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:202) ~[moqui_temp11993904401664195510execlib_jetty-servlet-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1600) ~[moqui_temp11993904401664195510execlib_jetty-servlet-10.0.9.jar.:10.0.9]
+	at org.moqui.impl.webapp.ElasticRequestLogFilter.doFilter(ElasticRequestLogFilter.groovy:96) ~[moqui_temp17930561684967606306WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:202) ~[moqui_temp11993904401664195510execlib_jetty-servlet-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1600) ~[moqui_temp11993904401664195510execlib_jetty-servlet-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:506) ~[moqui_temp11993904401664195510execlib_jetty-servlet-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:131) ~[moqui_temp2399526196118381885execlib_jetty-server-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:578) ~[moqui_temp12292795326214703700execlib_jetty-security-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[moqui_temp2399526196118381885execlib_jetty-server-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:223) ~[moqui_temp2399526196118381885execlib_jetty-server-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1571) ~[moqui_temp2399526196118381885execlib_jetty-server-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221) ~[moqui_temp2399526196118381885execlib_jetty-server-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1378) ~[moqui_temp2399526196118381885execlib_jetty-server-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176) ~[moqui_temp2399526196118381885execlib_jetty-server-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:463) ~[moqui_temp11993904401664195510execlib_jetty-servlet-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1544) ~[moqui_temp2399526196118381885execlib_jetty-server-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174) ~[moqui_temp2399526196118381885execlib_jetty-server-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1300) ~[moqui_temp2399526196118381885execlib_jetty-server-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129) ~[moqui_temp2399526196118381885execlib_jetty-server-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:717) ~[moqui_temp2399526196118381885execlib_jetty-server-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[moqui_temp2399526196118381885execlib_jetty-server-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.server.Server.handle(Server.java:562) ~[moqui_temp2399526196118381885execlib_jetty-server-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$0(HttpChannel.java:505) ~[moqui_temp2399526196118381885execlib_jetty-server-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:762) ~[moqui_temp2399526196118381885execlib_jetty-server-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:497) ~[moqui_temp2399526196118381885execlib_jetty-server-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:282) ~[moqui_temp2399526196118381885execlib_jetty-server-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:319) ~[moqui_temp2091475703270752409WEB-INF_lib_jetty-io-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100) ~[moqui_temp2091475703270752409WEB-INF_lib_jetty-io-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53) ~[moqui_temp2091475703270752409WEB-INF_lib_jetty-io-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.runTask(AdaptiveExecutionStrategy.java:412) ~[moqui_temp17416934230825355267WEB-INF_lib_jetty-util-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.consumeTask(AdaptiveExecutionStrategy.java:381) ~[moqui_temp17416934230825355267WEB-INF_lib_jetty-util-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.tryProduce(AdaptiveExecutionStrategy.java:268) ~[moqui_temp17416934230825355267WEB-INF_lib_jetty-util-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.lambda$new$0(AdaptiveExecutionStrategy.java:138) ~[moqui_temp17416934230825355267WEB-INF_lib_jetty-util-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:407) ~[moqui_temp17416934230825355267WEB-INF_lib_jetty-util-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:894) ~[moqui_temp17416934230825355267WEB-INF_lib_jetty-util-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1038) ~[moqui_temp17416934230825355267WEB-INF_lib_jetty-util-10.0.9.jar.:10.0.9]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+--- 2022-10-18 02:24:59.322 [           main] ERROR           org.moqui.impl.context.ElasticFacadeImpl [] []
+ Error initializing ElasticClient for cluster default: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information
+--- 2022-10-18 02:24:59.465 [           main] ERROR      org.moqui.impl.webapp.ElasticRequestLogFilter [] []
+ In ElasticRequestLogFilter init could not find ElasticClient with name logger or default, not starting
+--- 2022-10-18 02:29:26.313 [tp1700721442-26] ERROR                   org.moqui.impl.actions.XmlAction [] []
+ Error running groovy script (java.lang.IllegalArgumentException: No field found for path parameter codeStudent in entity moqui.entity.document.DataDocument): 
+1 : import static org.moqui.util.ObjectUtilities.*
+2 : import static org.moqui.util.CollectionUtilities.*
+3 : import static org.moqui.util.StringUtilities.*
+4 : import java.sql.Timestamp
+5 : // these are in the context by default: ExecutionContext ec, Map<String, Object> context, Map<String, Object> result
+6 : 
+7 : // begin inline script
+8 : org.moqui.impl.util.RestSchemaUtil.handleServiceRestSwagger(ec, sri.screenUrlInfo.extraPathNameList, "/rest/s1")
+9 : // end inline script
+10 : // make sure the last statement is not considered the return value
+11 : return;
+
+
+--- 2022-10-18 02:29:26.323 [tp1700721442-26] ERROR                 org.moqui.impl.webapp.MoquiServlet [] []
+ Internal error processing request: java.lang.IllegalArgumentException: No field found for path parameter codeStudent in entity moqui.entity.document.DataDocument
+java.lang.IllegalArgumentException: No field found for path parameter codeStudent in entity moqui.entity.document.DataDocument
+	at org.moqui.impl.service.RestApi$MethodEntity.addToSwaggerMap(RestApi.groovy:426) ~[moqui_temp8366522493598384828WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.RestApi$PathNode.addToSwaggerMap(RestApi.groovy:692) ~[moqui_temp8366522493598384828WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.RestApi$PathNode.addToSwaggerMap(RestApi.groovy:697) ~[moqui_temp8366522493598384828WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.RestApi$PathNode.addToSwaggerMap(RestApi.groovy:699) ~[moqui_temp8366522493598384828WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.RestApi.getSwaggerMap(RestApi.groovy:171) ~[moqui_temp8366522493598384828WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.util.RestSchemaUtil.handleServiceRestSwagger(RestSchemaUtil.groovy:846) ~[moqui_temp8366522493598384828WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.util.RestSchemaUtil$handleServiceRestSwagger.call(Unknown Source) ~[?:?]
+	at component___webroot_screen_webroot_rest_xml_transition_service_swagger_actions.run(component___webroot_screen_webroot_rest_xml_transition_service_swagger_actions:8) ~[?:?]
+	at org.moqui.impl.actions.XmlAction.run(XmlAction.java:67) ~[moqui_temp8366522493598384828WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenDefinition$TransitionItem.run(ScreenDefinition.groovy:987) ~[moqui_temp8366522493598384828WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:749) ~[moqui_temp8366522493598384828WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp8366522493598384828WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.internalRender(ScreenRenderImpl.groovy:454) ~[moqui_temp8366522493598384828WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.render(ScreenRenderImpl.groovy:170) ~[moqui_temp8366522493598384828WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.webapp.MoquiServlet.service(MoquiServlet.groovy:118) ~[moqui_temp8366522493598384828WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750) ~[moqui_temp17432927018267025607WEB-INF_lib_javax.servlet-api-4.0.1.jar.:4.0.1]
+	at org.eclipse.jetty.servlet.ServletHolder$NotAsync.service(ServletHolder.java:1410) ~[moqui_temp17001590592835124741execlib_jetty-servlet-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:764) ~[moqui_temp17001590592835124741execlib_jetty-servlet-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.servlet.ServletHandler$ChainEnd.doFilter(ServletHandler.java:1630) ~[moqui_temp17001590592835124741execlib_jetty-servlet-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.websocket.servlet.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:170) ~[moqui_temp7090605354790289713execlib_websocket-servlet-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:202) ~[moqui_temp17001590592835124741execlib_jetty-servlet-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1600) ~[moqui_temp17001590592835124741execlib_jetty-servlet-10.0.9.jar.:10.0.9]
+	at org.moqui.impl.webapp.ElasticRequestLogFilter.doFilter(ElasticRequestLogFilter.groovy:96) ~[moqui_temp8366522493598384828WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:202) ~[moqui_temp17001590592835124741execlib_jetty-servlet-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1600) ~[moqui_temp17001590592835124741execlib_jetty-servlet-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:506) ~[moqui_temp17001590592835124741execlib_jetty-servlet-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:131) ~[moqui_temp8027351367610703833execlib_jetty-server-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:578) ~[moqui_temp1821911017172637563execlib_jetty-security-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[moqui_temp8027351367610703833execlib_jetty-server-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:223) ~[moqui_temp8027351367610703833execlib_jetty-server-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1571) ~[moqui_temp8027351367610703833execlib_jetty-server-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221) ~[moqui_temp8027351367610703833execlib_jetty-server-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1378) ~[moqui_temp8027351367610703833execlib_jetty-server-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176) ~[moqui_temp8027351367610703833execlib_jetty-server-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:463) ~[moqui_temp17001590592835124741execlib_jetty-servlet-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1544) ~[moqui_temp8027351367610703833execlib_jetty-server-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174) ~[moqui_temp8027351367610703833execlib_jetty-server-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1300) ~[moqui_temp8027351367610703833execlib_jetty-server-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129) ~[moqui_temp8027351367610703833execlib_jetty-server-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:717) ~[moqui_temp8027351367610703833execlib_jetty-server-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[moqui_temp8027351367610703833execlib_jetty-server-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.server.Server.handle(Server.java:562) ~[moqui_temp8027351367610703833execlib_jetty-server-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$0(HttpChannel.java:505) ~[moqui_temp8027351367610703833execlib_jetty-server-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:762) ~[moqui_temp8027351367610703833execlib_jetty-server-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:497) ~[moqui_temp8027351367610703833execlib_jetty-server-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:282) ~[moqui_temp8027351367610703833execlib_jetty-server-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:319) ~[moqui_temp17742751228126824009WEB-INF_lib_jetty-io-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100) ~[moqui_temp17742751228126824009WEB-INF_lib_jetty-io-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53) ~[moqui_temp17742751228126824009WEB-INF_lib_jetty-io-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.runTask(AdaptiveExecutionStrategy.java:412) ~[moqui_temp16934779299654480953WEB-INF_lib_jetty-util-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.consumeTask(AdaptiveExecutionStrategy.java:381) ~[moqui_temp16934779299654480953WEB-INF_lib_jetty-util-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.tryProduce(AdaptiveExecutionStrategy.java:268) ~[moqui_temp16934779299654480953WEB-INF_lib_jetty-util-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.lambda$new$0(AdaptiveExecutionStrategy.java:138) ~[moqui_temp16934779299654480953WEB-INF_lib_jetty-util-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:407) ~[moqui_temp16934779299654480953WEB-INF_lib_jetty-util-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:894) ~[moqui_temp16934779299654480953WEB-INF_lib_jetty-util-10.0.9.jar.:10.0.9]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1038) ~[moqui_temp16934779299654480953WEB-INF_lib_jetty-util-10.0.9.jar.:10.0.9]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+--- 2022-10-18 02:44:55.971 [           main] ERROR           org.moqui.impl.context.ElasticFacadeImpl [] []
+ Error initializing ElasticClient for cluster default: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information
+--- 2022-10-18 02:44:56.284 [           main] ERROR      org.moqui.impl.webapp.ElasticRequestLogFilter [] []
+ In ElasticRequestLogFilter init could not find ElasticClient with name logger or default, not starting
+--- 2022-10-18 03:28:29.518 [           main] ERROR           org.moqui.impl.context.ElasticFacadeImpl [] []
+ Error initializing ElasticClient for cluster default: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information
+--- 2022-10-18 03:28:29.713 [           main] ERROR      org.moqui.impl.webapp.ElasticRequestLogFilter [] []
+ In ElasticRequestLogFilter init could not find ElasticClient with name logger or default, not starting
+--- 2022-10-18 19:11:48.176 [           main] ERROR           org.moqui.impl.context.ElasticFacadeImpl [] []
+ Error initializing ElasticClient for cluster default: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information
+--- 2022-10-18 19:11:48.335 [           main] ERROR      org.moqui.impl.webapp.ElasticRequestLogFilter [] []
+ In ElasticRequestLogFilter init could not find ElasticClient with name logger or default, not starting

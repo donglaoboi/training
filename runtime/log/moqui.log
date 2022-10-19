@@ -1,0 +1,294 @@
+--- 2022-10-19 09:11:22.987 [           main] INFO                     org.eclipse.jetty.server.Server []
+ jetty-10.0.9; built: 2022-03-30T16:46:32.527Z; git: a9eaf8d5d73369acf610ce88f850c0d56c4b1113; jvm 11.0.16+11-LTS-199
+--- 2022-10-19 09:11:23.029 [           main] INFO  lipse.jetty.server.session.DefaultSessionIdManager []
+ Session workerName=node0
+--- 2022-10-19 09:11:25.006 [           main] INFO  g.eclipse.jetty.webapp.StandardDescriptorProcessor []
+ NO JSP Support for /, did not find org.eclipse.jetty.jsp.JettyJspServlet
+--- 2022-10-19 09:11:25.543 [           main] INFO          org.moqui.impl.webapp.MoquiContextListener []
+ Loading Webapp 'webroot' (Moqui Root Webapp) on ROOT, located at: C:\Users\Admin\Desktop\New folder (2)\moqui-framework-3.0.0\execwartmp\ROOT\webapp
+--- 2022-10-19 09:11:25.682 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Initializing Moqui Framework version 3.0.0
+ - runtime directory: C:\Users\Admin\Desktop\New folder (2)\moqui-framework-3.0.0\runtime
+ - runtime config:    C:\Users\Admin\Desktop\New folder (2)\moqui-framework-3.0.0\runtime/conf/MoquiDevConf.xml
+--- 2022-10-19 09:11:25.682 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Running on Java 11.0.16 VM 11.0.16+11-LTS-199 Runtime 11.0.16+11-LTS-199
+--- 2022-10-19 09:11:26.066 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Added component tools              at file:C:/Users/Admin/Desktop/New folder (2)/moqui-framework-3.0.0/runtime/base-component/tools
+--- 2022-10-19 09:11:26.076 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Added component webroot            at file:C:/Users/Admin/Desktop/New folder (2)/moqui-framework-3.0.0/runtime/base-component/webroot
+--- 2022-10-19 09:11:26.080 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Added component training           at file:C:/Users/Admin/Desktop/New folder (2)/moqui-framework-3.0.0/runtime/component/training
+--- 2022-10-19 09:11:26.080 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Components after depends-on sort: [tools, webroot, training]
+--- 2022-10-19 09:11:26.089 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Merging MoquiConf.xml file from component tools
+--- 2022-10-19 09:11:26.107 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Merging MoquiConf.xml file from component training
+--- 2022-10-19 09:11:26.110 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Merging runtime configuration at C:\Users\Admin\Desktop\New folder (2)\moqui-framework-3.0.0\runtime/conf/MoquiDevConf.xml
+--- 2022-10-19 09:11:26.122 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property instance_purpose from default with value [dev]
+--- 2022-10-19 09:11:26.122 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property default_locale from default with value [en_US]
+--- 2022-10-19 09:11:26.122 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property default_time_zone from default with value [US/Pacific]
+--- 2022-10-19 09:11:26.122 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property database_time_zone from default with value [US/Pacific]
+--- 2022-10-19 09:11:26.122 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property webapp_https_enabled from default with value [false]
+--- 2022-10-19 09:11:26.122 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property webapp_allow_origins from default with value [*]
+--- 2022-10-19 09:11:26.122 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property webapp_handle_cors from default with value [true]
+--- 2022-10-19 09:11:26.122 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property webapp_status_ips from default with value [127.0.0.1]
+--- 2022-10-19 09:11:26.122 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property webapp_require_session_token from default with value [true]
+--- 2022-10-19 09:11:26.123 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property webapp_upload_executable_allow from default with value [false]
+--- 2022-10-19 09:11:26.123 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property entity_ds_db_conf from default with value [postgres]
+--- 2022-10-19 09:11:26.123 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property entity_ds_host from default with value [localhost]
+--- 2022-10-19 09:11:26.123 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property entity_ds_port from default with value [5432]
+--- 2022-10-19 09:11:26.123 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property entity_ds_database from default with value [db_test]
+--- 2022-10-19 09:11:26.151 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property entity_ds_url from default with value [jdbc:h2:C:\Users\Admin\Desktop\New folder (2)\moqui-framework-3.0.0\runtime/db/h2/db_test;lock_timeout=30000]
+--- 2022-10-19 09:11:26.152 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property entity_ds_user from default with value [postgres]
+--- 2022-10-19 09:11:26.152 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting pw/key property entity_ds_password from default
+--- 2022-10-19 09:11:26.152 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting pw/key property entity_ds_crypt_pass from default
+--- 2022-10-19 09:11:26.152 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting pw/key property entity_ds_crypt_pass_old from default
+--- 2022-10-19 09:11:26.152 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property entity_add_missing_runtime from default with value [false]
+--- 2022-10-19 09:11:26.152 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property entity_add_missing_startup from default with value [true]
+--- 2022-10-19 09:11:26.152 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property entity_lock_track from default with value [true]
+--- 2022-10-19 09:11:26.152 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property entity_statement_timeout from default with value [false]
+--- 2022-10-19 09:11:26.152 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property entity_empty_db_load from default with value [all]
+--- 2022-10-19 09:11:26.152 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property entity_ds_c1_disabled from default with value [true]
+--- 2022-10-19 09:11:26.152 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property entity_ds_c1_db_conf from default with value [mysql]
+--- 2022-10-19 09:11:26.152 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property scheduled_job_check_time from default with value [60]
+--- 2022-10-19 09:11:26.152 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property elasticsearch_url from default with value [http://127.0.0.1:9200]
+--- 2022-10-19 09:11:26.152 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property kibana_host from default with value [127.0.0.1]
+--- 2022-10-19 09:11:26.152 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property kibana_port from default with value [5601]
+--- 2022-10-19 09:11:26.180 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Found default_time_zone US/Pacific: sun.util.calendar.ZoneInfo[id="US/Pacific",offset=-28800000,dstSavings=3600000,useDaylight=true,transitions=185,lastRule=java.util.SimpleTimeZone[id=US/Pacific,offset=-28800000,dstSavings=3600000,useDaylight=true,startYear=0,startMode=3,startMonth=2,startDay=8,startDayOfWeek=1,startTime=7200000,startTimeMode=0,endMode=3,endMonth=10,endDay=1,endDayOfWeek=1,endTime=7200000,endTimeMode=0]]
+--- 2022-10-19 09:11:26.180 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Default locale en_US, time zone sun.util.calendar.ZoneInfo[id="US/Pacific",offset=-28800000,dstSavings=3600000,useDaylight=true,transitions=185,lastRule=java.util.SimpleTimeZone[id=US/Pacific,offset=-28800000,dstSavings=3600000,useDaylight=true,startYear=0,startMode=3,startMonth=2,startDay=8,startDayOfWeek=1,startTime=7200000,startTimeMode=0,endMode=3,endMonth=10,endDay=1,endDayOfWeek=1,endTime=7200000,endTimeMode=0]]
+--- 2022-10-18 19:11:26.223 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Initializing worker ThreadPoolExecutor: queue limit 65535, pool-core 16, pool-max 24, pool-alive 60s
+--- 2022-10-18 19:11:26.241 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Initializing MClassLoader context MoquiStart$StartClassLoader cur class MoquiStart$StartClassLoader system null
+--- 2022-10-18 19:11:26.265 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Initialized MClassLoader with parent MoquiStart$StartClassLoader
+--- 2022-10-18 19:11:26.271 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Added JAR from runtime/lib: postgresql-42.5.0.jar
+--- 2022-10-18 19:11:26.272 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Initialized ClassLoaders in 40ms
+--- 2022-10-18 19:11:26.278 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Not loading disabled ToolFactory with class: org.moqui.impl.tools.JackrabbitRunToolFactory
+--- 2022-10-18 19:11:26.278 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Not loading disabled ToolFactory with class: org.moqui.impl.tools.SubEthaSmtpToolFactory
+--- 2022-10-18 19:11:26.283 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Loading ToolFactory with class: org.moqui.impl.tools.MCacheToolFactory
+--- 2022-10-18 19:11:26.290 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Loading ToolFactory with class: org.moqui.impl.tools.H2ServerToolFactory
+--- 2022-10-18 19:11:26.305 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Cache Facade initialized
+--- 2022-10-18 19:11:26.514 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Resource Facade initialized
+--- 2022-10-18 19:11:26.570 [           main] WARN                           bitronix.tm.Configuration []
+ Cannot get the unique server ID for this JVM ('bitronix.tm.serverId'). Make sure it is configured and you use only US-ASCII characters. Will use IP address instead (unsafe for production usage!).
+--- 2022-10-18 19:11:26.580 [           main] WARN                     bitronix.tm.journal.DiskJournal []
+ active log file is unclean, did you call BitronixTransactionManager.shutdown() at the end of the last run?
+--- 2022-10-18 19:11:26.649 [           main] INFO        org.moqui.impl.context.TransactionFacadeImpl []
+ Internal transaction manager initialized: UserTransaction class bitronix.tm.BitronixTransactionManager, TransactionManager class bitronix.tm.BitronixTransactionManager
+--- 2022-10-18 19:11:26.649 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Transaction Facade initialized
+--- 2022-10-18 19:11:26.712 [           main] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Database time zone is sun.util.calendar.ZoneInfo[id="US/Pacific",offset=-28800000,dstSavings=3600000,useDaylight=true,transitions=185,lastRule=java.util.SimpleTimeZone[id=US/Pacific,offset=-28800000,dstSavings=3600000,useDaylight=true,startYear=0,startMode=3,startMonth=2,startDay=8,startDayOfWeek=1,startTime=7200000,startTimeMode=0,endMode=3,endMonth=10,endDay=1,endDayOfWeek=1,endTime=7200000,endTimeMode=0]]
+--- 2022-10-18 19:11:26.864 [           main] INFO  org.moqui.impl.context.TransactionInternalBitronix []
+ Initializing DataSource transactional_DS (postgres) with properties: [databaseName:db_test, serverName:localhost, user:postgres, portNumber:5432]
+--- 2022-10-18 19:11:27.673 [           main] INFO  org.moqui.impl.context.TransactionInternalBitronix []
+ Init DataSource transactional_DS (postgres) isolation READ_COMMITTED (2), max pool 90
+--- 2022-10-18 19:11:27.685 [           main] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Skipping disabled datasource transactional#clone1
+--- 2022-10-18 19:11:27.691 [           main] INFO                   org.moqui.impl.entity.EntityCache []
+ Entity Cache initialized, distributed cache invalidate enabled: false
+--- 2022-10-18 19:11:27.703 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Entity Facade initialized
+--- 2022-10-18 19:11:27.787 [           main] INFO                      org.moqui.impl.service.RestApi []
+ Loaded REST API from moqui.rest.xml (79 paths, 89 methods)
+--- 2022-10-18 19:11:27.788 [           main] INFO                      org.moqui.impl.service.RestApi []
+ Loaded REST API files, 1 roots, in 45ms
+--- 2022-10-18 19:11:27.788 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Service Facade initialized
+--- 2022-10-18 19:11:27.806 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Screen Facade initialized
+--- 2022-10-18 19:11:27.806 [           main] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Loading entity definitions
+--- 2022-10-18 19:11:27.845 [           main] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found entities in 11 files in 39ms
+--- 2022-10-18 19:11:28.142 [           main] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found 0 view-entity definitions in database (DbViewEntity records)
+--- 2022-10-18 19:11:28.302 [           main] WARN              org.moqui.impl.entity.EntityDefinition []
+ ===== TOREMOVE ===== entity moqui.security.ArtifactTarpitCheckView node view-entity isViewEntity true org.moqui.impl.entity.EntityDefinition@2197be42
+--- 2022-10-18 19:11:28.350 [           main] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Loaded 201 entity definitions in 544ms
+--- 2022-10-18 19:11:28.370 [           main] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Checking tables for entities in groups [transactional]
+--- 2022-10-18 19:11:28.462 [           main] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Checked tables for all entities in 0.11 seconds
+--- 2022-10-18 19:11:28.471 [           main] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Loaded 6 Entity ECA rules from 1 .eecas.xml files, 0 rules have no id, 6 EECA rules active
+--- 2022-10-18 19:11:28.472 [           main] INFO            org.moqui.impl.service.ServiceFacadeImpl []
+ Loaded 0 Service ECA rules from 0 .secas.xml files, 0 rules have no id, 0 SECA rules active
+--- 2022-10-18 19:11:28.472 [           main] INFO            org.moqui.impl.service.ServiceFacadeImpl []
+ No distributed-factory specified, distributed async service calls will be run local only
+--- 2022-10-18 19:11:28.481 [           main] INFO            org.moqui.impl.service.ServiceFacadeImpl []
+ Starting Scheduled Service Job Runner, checking for jobs every 60 seconds after a 120 second initial delay
+--- 2022-10-18 19:11:28.501 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Initializing ToolFactory: MCache
+--- 2022-10-18 19:11:28.501 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Initializing ToolFactory: H2Server
+--- 2022-10-18 19:11:28.564 [           main] INFO            org.moqui.impl.context.ElasticFacadeImpl []
+ Initializing ElasticFacade Client for cluster default at http://127.0.0.1:9200
+--- 2022-10-18 19:11:28.699 [           main] WARN  rg.eclipse.jetty.util.ssl.SslContextFactory.config []
+ Trusting all certificates configured for Client@55d1f065[provider=null,keyStore=null,trustStore=null]
+--- 2022-10-18 19:11:28.700 [           main] WARN  rg.eclipse.jetty.util.ssl.SslContextFactory.config []
+ No Client EndPointIdentificationAlgorithm configured for Client@55d1f065[provider=null,keyStore=null,trustStore=null]
+--- 2022-10-18 19:11:28.748 [           main] WARN            org.moqui.impl.context.ElasticFacadeImpl []
+ Error connecting to ElasticSearch cluster default at http://127.0.0.1:9200, try 1 of 20: org.moqui.BaseException: Error calling HTTP request to http://127.0.0.1:9200/
+--- 2022-10-18 19:11:29.765 [           main] WARN            org.moqui.impl.context.ElasticFacadeImpl []
+ Error connecting to ElasticSearch cluster default at http://127.0.0.1:9200, try 2 of 20: org.moqui.BaseException: Error calling HTTP request to http://127.0.0.1:9200/
+--- 2022-10-18 19:11:30.774 [           main] WARN            org.moqui.impl.context.ElasticFacadeImpl []
+ Error connecting to ElasticSearch cluster default at http://127.0.0.1:9200, try 3 of 20: org.moqui.BaseException: Error calling HTTP request to http://127.0.0.1:9200/
+--- 2022-10-18 19:11:31.778 [           main] WARN            org.moqui.impl.context.ElasticFacadeImpl []
+ Error connecting to ElasticSearch cluster default at http://127.0.0.1:9200, try 4 of 20: org.moqui.BaseException: Error calling HTTP request to http://127.0.0.1:9200/
+--- 2022-10-18 19:11:32.792 [           main] WARN            org.moqui.impl.context.ElasticFacadeImpl []
+ Error connecting to ElasticSearch cluster default at http://127.0.0.1:9200, try 5 of 20: org.moqui.BaseException: Error calling HTTP request to http://127.0.0.1:9200/
+--- 2022-10-18 19:11:33.809 [           main] WARN            org.moqui.impl.context.ElasticFacadeImpl []
+ Error connecting to ElasticSearch cluster default at http://127.0.0.1:9200, try 6 of 20: org.moqui.BaseException: Error calling HTTP request to http://127.0.0.1:9200/
+--- 2022-10-18 19:11:34.822 [           main] WARN            org.moqui.impl.context.ElasticFacadeImpl []
+ Error connecting to ElasticSearch cluster default at http://127.0.0.1:9200, try 7 of 20: org.moqui.BaseException: Error calling HTTP request to http://127.0.0.1:9200/
+--- 2022-10-18 19:11:35.827 [           main] WARN            org.moqui.impl.context.ElasticFacadeImpl []
+ Error connecting to ElasticSearch cluster default at http://127.0.0.1:9200, try 8 of 20: org.moqui.BaseException: Error calling HTTP request to http://127.0.0.1:9200/
+--- 2022-10-18 19:11:36.843 [           main] WARN            org.moqui.impl.context.ElasticFacadeImpl []
+ Error connecting to ElasticSearch cluster default at http://127.0.0.1:9200, try 9 of 20: org.moqui.BaseException: Error calling HTTP request to http://127.0.0.1:9200/
+--- 2022-10-18 19:11:37.853 [           main] WARN            org.moqui.impl.context.ElasticFacadeImpl []
+ Error connecting to ElasticSearch cluster default at http://127.0.0.1:9200, try 10 of 20: org.moqui.BaseException: Error calling HTTP request to http://127.0.0.1:9200/
+--- 2022-10-18 19:11:38.857 [           main] WARN            org.moqui.impl.context.ElasticFacadeImpl []
+ Error connecting to ElasticSearch cluster default at http://127.0.0.1:9200, try 11 of 20: org.moqui.BaseException: Error calling HTTP request to http://127.0.0.1:9200/
+--- 2022-10-18 19:11:39.874 [           main] WARN            org.moqui.impl.context.ElasticFacadeImpl []
+ Error connecting to ElasticSearch cluster default at http://127.0.0.1:9200, try 12 of 20: org.moqui.BaseException: Error calling HTTP request to http://127.0.0.1:9200/
+--- 2022-10-18 19:11:40.891 [           main] WARN            org.moqui.impl.context.ElasticFacadeImpl []
+ Error connecting to ElasticSearch cluster default at http://127.0.0.1:9200, try 13 of 20: org.moqui.BaseException: Error calling HTTP request to http://127.0.0.1:9200/
+--- 2022-10-18 19:11:41.895 [           main] WARN            org.moqui.impl.context.ElasticFacadeImpl []
+ Error connecting to ElasticSearch cluster default at http://127.0.0.1:9200, try 14 of 20: org.moqui.BaseException: Error calling HTTP request to http://127.0.0.1:9200/
+--- 2022-10-18 19:11:42.909 [           main] WARN            org.moqui.impl.context.ElasticFacadeImpl []
+ Error connecting to ElasticSearch cluster default at http://127.0.0.1:9200, try 15 of 20: org.moqui.BaseException: Error calling HTTP request to http://127.0.0.1:9200/
+--- 2022-10-18 19:11:43.912 [           main] WARN            org.moqui.impl.context.ElasticFacadeImpl []
+ Error connecting to ElasticSearch cluster default at http://127.0.0.1:9200, try 16 of 20: org.moqui.BaseException: Error calling HTTP request to http://127.0.0.1:9200/
+--- 2022-10-18 19:11:44.913 [           main] WARN            org.moqui.impl.context.ElasticFacadeImpl []
+ Error connecting to ElasticSearch cluster default at http://127.0.0.1:9200, try 17 of 20: org.moqui.BaseException: Error calling HTTP request to http://127.0.0.1:9200/
+--- 2022-10-18 19:11:45.927 [           main] WARN            org.moqui.impl.context.ElasticFacadeImpl []
+ Error connecting to ElasticSearch cluster default at http://127.0.0.1:9200, try 18 of 20: org.moqui.BaseException: Error calling HTTP request to http://127.0.0.1:9200/
+--- 2022-10-18 19:11:46.942 [           main] WARN            org.moqui.impl.context.ElasticFacadeImpl []
+ Error connecting to ElasticSearch cluster default at http://127.0.0.1:9200, try 19 of 20: org.moqui.BaseException: Error calling HTTP request to http://127.0.0.1:9200/
+--- 2022-10-18 19:11:48.176 [           main] ERROR           org.moqui.impl.context.ElasticFacadeImpl []
+ Error initializing ElasticClient for cluster default: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information
+--- 2022-10-18 19:11:48.176 [           main] WARN            org.moqui.impl.context.ElasticFacadeImpl []
+ No Elastic Client found with name 'logger' or 'default', not initializing ElasticSearchLogger
+--- 2022-10-18 19:11:48.176 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Elastic Facade initialized
+--- 2022-10-18 19:11:48.177 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Execution Context Factory initialized in 22.586 seconds
+--- 2022-10-18 19:11:48.195 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Found 149 Enumeration records, NOT loading empty-db-load data types (all)
+--- 2022-10-18 19:11:48.250 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Initializing webapp webroot http://null:null https://null:null https enabled? false
+--- 2022-10-18 19:11:48.255 [           main] INFO          org.moqui.impl.webapp.MoquiContextListener []
+ Added webapp filter ElasticRequestLogFilter on: [/*], [REQUEST]
+--- 2022-10-18 19:11:48.258 [           main] INFO          org.moqui.impl.webapp.MoquiContextListener []
+ Added webapp filter ElasticAuthFilter on: [/elastic/*], []
+--- 2022-10-18 19:11:48.258 [           main] INFO          org.moqui.impl.webapp.MoquiContextListener []
+ Added webapp filter KibanaAuthFilter on: [/kibana/*], []
+--- 2022-10-18 19:11:48.261 [           main] INFO          org.moqui.impl.webapp.MoquiContextListener []
+ Added webapp listener org.moqui.impl.webapp.MoquiSessionListener
+--- 2022-10-18 19:11:48.282 [           main] INFO          org.moqui.impl.webapp.MoquiContextListener []
+ Added servlet MoquiServlet on: [/*]
+--- 2022-10-18 19:11:48.287 [           main] INFO          org.moqui.impl.webapp.MoquiContextListener []
+ Added servlet MoquiFopServlet on: [/fop/*]
+--- 2022-10-18 19:11:48.306 [           main] INFO          org.moqui.impl.webapp.MoquiContextListener []
+ Added servlet ElasticSearchProxy on: [/elastic/*]
+--- 2022-10-18 19:11:48.316 [           main] INFO          org.moqui.impl.webapp.MoquiContextListener []
+ Added servlet KibanaProxy on: [/kibana/*]
+--- 2022-10-18 19:11:48.319 [           main] INFO          org.moqui.impl.webapp.MoquiContextListener []
+ Added servlet H2Console on: [/h2/*]
+--- 2022-10-18 19:11:48.319 [           main] INFO          org.moqui.impl.webapp.MoquiContextListener []
+ Found WebSocket ServerContainer org.eclipse.jetty.websocket.javax.server.internal.JavaxWebSocketServerContainer
+--- 2022-10-18 19:11:48.333 [           main] INFO          org.moqui.impl.webapp.MoquiContextListener []
+ Added WebSocket endpoint /notws for class org.moqui.impl.webapp.NotificationEndpoint
+--- 2022-10-18 19:11:48.333 [           main] INFO          org.moqui.impl.webapp.MoquiContextListener []
+ Added WebSocket endpoint /groovysh for class org.moqui.impl.webapp.GroovyShellEndpoint
+--- 2022-10-18 19:11:48.333 [           main] INFO          org.moqui.impl.webapp.MoquiContextListener []
+ Moqui Framework initialized in 23.014 seconds
+--- 2022-10-18 19:11:48.335 [           main] ERROR      org.moqui.impl.webapp.ElasticRequestLogFilter []
+ In ElasticRequestLogFilter init could not find ElasticClient with name logger or default, not starting
+--- 2022-10-18 19:11:48.449 [           main] INFO               org.moqui.impl.webapp.MoquiFopServlet []
+ MoquiFopServlet initialized for webapp webroot
+--- 2022-10-18 19:11:48.449 [           main] INFO                  org.moqui.impl.webapp.MoquiServlet []
+ MoquiServlet initialized for webapp webroot
+--- 2022-10-18 19:11:48.449 [           main] INFO     org.eclipse.jetty.server.handler.ContextHandler []
+ Started o.e.j.w.WebAppContext@62b3df3a{Moqui Root Webapp,/,file:///C:/Users/Admin/Desktop/New%20folder%20(2)/moqui-framework-3.0.0/execwartmp/ROOT/webapp/,AVAILABLE}{file:/C:/Users/Admin/Desktop/New%20folder%20(2)/moqui-framework-3.0.0/moqui.war}
+--- 2022-10-18 19:11:48.463 [           main] INFO          org.eclipse.jetty.server.AbstractConnector []
+ Started ServerConnector@3382f8ae{HTTP/1.1, (http/1.1)}{0.0.0.0:8090}
+--- 2022-10-18 19:11:48.466 [           main] INFO                     org.eclipse.jetty.server.Server []
+ Started Server@743cb8e0{STARTING}[10.0.9,sto=30000] @27078ms
+--- 2022-10-18 19:13:21.755 [yShutdownThread] INFO                     org.eclipse.jetty.server.Server []
+ Stopped Server@743cb8e0{STOPPING}[10.0.9,sto=30000]
+--- 2022-10-18 19:13:21.755 [yShutdownThread] INFO                     org.eclipse.jetty.server.Server []
+ Shutdown Server@743cb8e0{STOPPING}[10.0.9,sto=30000]
+--- 2022-10-18 19:13:21.765 [yShutdownThread] INFO          org.eclipse.jetty.server.AbstractConnector []
+ Stopped ServerConnector@3382f8ae{HTTP/1.1, (http/1.1)}{0.0.0.0:8090}
+--- 2022-10-18 19:13:21.769 [yShutdownThread] INFO          org.moqui.impl.webapp.MoquiContextListener []
+ Context Destroyed for Moqui webapp [ROOT]
+--- 2022-10-18 19:13:21.825 [   RequireNewTx] INFO                org.moqui.impl.entity.EntityDataFeed []
+ Built entity.data.feed.info cache in 19ms, entries for 0 entities
+--- 2022-10-18 19:13:21.828 [   RequireNewTx] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Created 168 automatic reverse relationships
+--- 2022-10-18 19:13:21.856 [yShutdownThread] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ ArtifactHitBins stored
+--- 2022-10-18 19:13:21.857 [yShutdownThread] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Scheduled executor pool shut down
+--- 2022-10-18 19:13:21.857 [yShutdownThread] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Shutting down worker pool
+--- 2022-10-18 19:13:21.857 [yShutdownThread] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Worker pool shut down
+--- 2022-10-18 19:13:21.857 [yShutdownThread] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Destroying ToolFactory: H2Server
+--- 2022-10-18 19:13:21.857 [yShutdownThread] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Destroying ToolFactory: MCache
+--- 2022-10-18 19:13:21.857 [yShutdownThread] INFO  org.moqui.impl.context.TransactionInternalBitronix []
+ Shutting down Bitronix
+--- 2022-10-18 19:13:22.149 [yShutdownThread] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Facades destroyed
+--- 2022-10-18 19:13:22.151 [yShutdownThread] INFO          org.moqui.impl.webapp.MoquiContextListener []
+ Destroyed Moqui Execution Context Factory for webapp [ROOT]
+--- 2022-10-18 19:13:22.183 [yShutdownThread] INFO     org.eclipse.jetty.server.handler.ContextHandler []
+ Stopped o.e.j.w.WebAppContext@62b3df3a{Moqui Root Webapp,/,null,STOPPED}{file:/C:/Users/Admin/Desktop/New%20folder%20(2)/moqui-framework-3.0.0/moqui.war}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-facade-xml type = "seed">
+    <moqui.entity.School codeSchool = "01" nameSchool = "HV Buu Chinh"/>
+    <moqui.entity.School codeSchool = "02" nameSchool = "DH Back Khoa"/>
+    <moqui.entity.School codeSchool = "03" nameSchool = "FTU"/>
+    <moqui.entity.School codeSchool = "04" nameSchool = "HV Ngan Hang"/>
+    <moqui.entity.Class codeClass = "01" codeSchool = "01" nameClass = "Lap Trinh Web"/>
+    <moqui.entity.Class codeClass = "02" codeSchool = "01" nameClass = "Triet Hoc Dai Cuong"/>
+    <moqui.entity.Class codeClass = "03" codeSchool = "02" nameClass = "Tu Tuong Ho Chi Minh"/>
+    <moqui.entity.Class codeClass = "04" codeSchool = "02" nameClass = "Mat Ma Hoc"/>
+    <moqui.entity.Class codeClass = "05" codeSchool = "03" nameClass = "Lap Trinh Mang"/>
+    <moqui.entity.Class codeClass = "06" codeSchool = "03" nameClass = "Mang May Tinh"/>
+    <moqui.entity.Class codeClass = "07" codeSchool = "03" nameClass = "The Duc"/>
+    <moqui.entity.Class codeClass = "08" codeSchool = "04" nameClass = "Vat Ly"/>
+    <moqui.entity.Student codeStudent = "101" nameStudent = "Pham Dang Long" codeClass = "01"/>
+    <moqui.entity.Student codeStudent = "102" nameStudent = "Jayce" codeClass = "01"/>
+    <moqui.entity.Student codeStudent = "103" nameStudent = "Jayce 1" codeClass = "02"/>
+    <moqui.entity.Student codeStudent = "104" nameStudent = "Jayce 2" codeClass = "02"/>
+    <moqui.entity.Student codeStudent = "105" nameStudent = "Jayce 3" codeClass = "03"/>
+    <moqui.entity.Student codeStudent = "106" nameStudent = "Jayce 4" codeClass = "03"/>
+    <moqui.entity.Student codeStudent = "107" nameStudent = "Jayce 5" codeClass = "04"/>
+    <moqui.entity.Student codeStudent = "108" nameStudent = "Jayce 6" codeClass = "04"/>
+    <moqui.entity.Student codeStudent = "109" nameStudent = "Jayce 7" codeClass = "05"/>
+    <moqui.entity.Student codeStudent = "110" nameStudent = "Jayce 8" codeClass = "06"/>
+    <moqui.entity.Student codeStudent = "111" nameStudent = "Jayce 9" codeClass = "07"/>
+    <moqui.entity.Student codeStudent = "112" nameStudent = "Jayce 10" codeClass = "08"/>
+</entity-facade-xml>

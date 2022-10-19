@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entities xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="entity-definition-3.xsd">
+    <entity entity-name="School" package="moqui.entity">
+        <field name="codeSchool" type="id" is-pk="true"/>
+        <field name="nameSchool" type="text-medium"/>
+        <relationship type="one" related="Class">
+            <key-map field-name="codeSchool" related="Class"/>
+        </relationship>
+
+    </entity>
+    <entity entity-name="Class" package="moqui.entity">
+        <field name="codeClass" type="id" is-pk="true"/>
+        <field name="codeSchool" type="id" />
+        <field name="nameClass" type="text-medium"/>
+        <relationship type="one" related="Student">
+            <key-map field-name="codeClass" related="Student"/>
+        </relationship>
+        <relationship type="many" related="School">
+            <key-map field-name="codeSchool" related="School"/>
+        </relationship>
+    </entity>
+    <entity entity-name="Student" package="moqui.entity">
+        <field name="codeStudent" type="id" is-pk="true"/>
+        <field name="nameStudent" type="text-medium"/>
+        <field name="codeClass" type="id"/>
+        <relationship type="many" related="Class">
+            <key-map field-name="codeClass" related="Class"/>
+        </relationship>
+    </entity>
+
+    <view-entity entity-name="findClassAndSchool" package="moqui.entity">
+        <member-entity entity-alias="CLS" entity-name="moqui.entity.Class"/>
+        <member-entity entity-alias="SCH" entity-name="moqui.entity.School" join-from-alias="CLS">
+            <key-map field-name="codeSchool"/>
+        </member-entity>
+
+        <alias name="nameClass" entity-alias="CLS"/>
+        <alias name="nameSchool" entity-alias="SCH"/>
+        <alias name="codeSchool" entity-alias="SCH"/>
+    </view-entity>
+
+    <view-entity entity-name="findStdAndCls" package="moqui.entity">
+        <member-entity entity-alias="STD" entity-name="moqui.entity.Student"/>
+        <member-entity entity-alias="CLS" entity-name="moqui.entity.Class" join-from-alias="STD">
+            <key-map field-name="codeClass"/>
+        </member-entity>
+        <alias name="nameStudent" entity-alias="STD"/>
+        <alias name="nameClass" entity-alias="CLS"/>
+        <alias name="codeStudent" entity-alias="STD"/>
+
+    </view-entity>
+    <view-entity entity-name="findStdAndClsAndScl" package="moqui.entity">
+        <member-entity entity-alias="STD" entity-name="moqui.entity.Student"/>
+        <member-entity entity-alias="CLS" entity-name="moqui.entity.Class" join-from-alias="STD">
+            <key-map field-name="codeClass"/>
+        </member-entity>
+        <member-entity entity-alias="SCL" entity-name="moqui.entity.School" join-from-alias="CLS">
+            <key-map field-name="codeSchool"/>
+        </member-entity>
+        <alias name="nameStudent" entity-alias="STD"/>
+        <alias name="nameClass" entity-alias="CLS"/>
+        <alias name="codeStudent" entity-alias="STD"/>
+        <alias name="nameSchool" entity-alias="SCL"/>
+    </view-entity>
+
+
+
+
+</entities>

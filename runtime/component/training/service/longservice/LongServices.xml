@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<services xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/service-definition-3.xsd">
+
+    <service verb="response" noun="CongHaiSo" authenticate="anonymous-all">
+        <in-parameters>
+            <parameter name="inValue" required="true" type="Integer"/>
+            <parameter name="inValue2" required="true" type="Integer"/>
+        </in-parameters>
+        <out-parameters>
+            <parameter name="tong"/>
+        </out-parameters>
+        <actions>
+            <script><![CDATA[
+                tong = inValue + inValue2
+            ]]></script>
+        </actions>
+    </service>
+    <service verb="response" noun="PhuongTrinhBac2" authenticate="anonymous-all">
+        <in-parameters>
+            <parameter name="a" required="true" type="Integer"/>
+            <parameter name="b" required="true" type="Integer"/>
+            <parameter name="c" required="true" type="Integer"/>
+        </in-parameters>
+        <out-parameters>
+            <parameter name="x1"/>
+            <parameter name="x2"/>
+        </out-parameters>
+
+        <actions>
+            <script><![CDATA[
+            import java.lang.Math
+            d=b*b-4*a*c
+            x1 = ((-b + Math.sqrt(d)) / (2*a))
+            x2 = ((-b - Math.sqrt(d)) / (2*a))
+            ]]></script>
+        </actions>
+    </service>
+    <service verb="response" noun="DoTuoi" authenticate="anonymous-all">
+        <in-parameters>
+            <parameter name="tuoi" required="true" type="Integer"/>
+        </in-parameters>
+        <out-parameters>
+            <parameter name="dotuoi"/>
+        </out-parameters>
+        <actions>
+            <script><![CDATA[
+                if (tuoi>0 && tuoi<16) dotuoi = "thieu nhi"
+                else if (tuoi > 15 && tuoi<35) dotuoi = "thanh nien"
+                else if (tuoi>34 && tuoi <60 ) dotuoi = "trung nien"
+                else if (tuoi>59) dotuoi = "cao tuoi"
+
+            ]]></script>
+        </actions>
+    </service>
+    <service verb="response" noun="TimTenTinh" authenticate="anonymous-all">
+
+        <in-parameters>
+            <parameter name="matinh" required="true" type="java.lang.String"/>
+        </in-parameters>
+        <out-parameters>
+            <parameter name="tentinh" type="java.lang.String"/>
+        </out-parameters>
+        <actions>
+            <script><![CDATA[
+            import java.io.BufferedReader;
+            import java.io.FileReader;
+            import java.util.List;
+            import java.util.ArrayList;
+
+                    List<String> listOfStrings = new ArrayList<String>();
+                    BufferedReader bf = new BufferedReader(new FileReader("province2.txt"));
+                    line = null;
+                    while ((line = bf.readLine()) != null) {
+                        listOfStrings.add(line);
+                        String tmpNum = line.substring(line.length() - 2, line.length());
+                        String tmpChar = line.substring(0, line.length() - 2);
+                        if (tmpNum.equals(matinh)) tentinh = tmpChar;
+
+                    }
+            bf.close();
+            ]]></script>
+        </actions>
+    </service>
+    <service verb="response" noun="Call" authenticate="anonymous-all">
+        <in-parameters>
+            <parameter name="inValue" required="true" type="Integer" />
+            <parameter name="inValue1" required="true" type="Integer"/>
+        </in-parameters>
+        <out-parameters>
+            <parameter name="outValue"/>
+        </out-parameters>
+
+        <actions>
+
+            <service-call name="longservice.LongServices.response#Sum" out-map="outValue"
+                          in-map="[inValue:inValue, inValue1:inValue1,  sum:'outValue']"/>
+            <script><![CDATA[
+
+            ]]></script>
+        </actions>
+    </service>
+
+    <service verb="response" noun="JsonAPI" authenticate="anonymous-all">
+        <out-parameters>
+            <parameter name="outputjson" />
+        </out-parameters>
+        <actions>
+            <script><![CDATA[
+                import java.io.BufferedReader;
+                import java.io.InputStreamReader;
+                import java.net.HttpURLConnection;
+                import java.net.URL;
+                BufferedReader reader;
+                String line;
+                StringBuffer responseContent = new StringBuffer();
+                URL url = new URL("https://jsonplaceholder.typicode.com/todos/1");
+                connection = (HttpURLConnection) url.openConnection();
+                int status = connection.getResponseCode();
+                reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+                while ((line = reader.readLine()) != null) {
+                    responseContent.append(line);
+                }
+                reader.close();
+                Outputjson = responseContent
+
+
+            ]]></script>
+        </actions>
+    </service>
+
+    <service  verb="store"  noun="Domath" type="interface">
+        <in-parameters>
+            <parameter name="a" required="true" type="Integer"/>
+            <parameter name="b" required="true" type="Integer"/>
+            <parameter name="c" required="true" type="Integer"/>
+        </in-parameters>
+        <out-parameters>
+            <parameter name="result" />
+        </out-parameters>
+    </service>
+
+    <service verb="response" noun="Add" >
+        <implements service="longservice.LongServices.store#domath"/>
+        <actions>
+            <script><![CDATA[
+                            result = a+b+c;
+                        ]]></script>
+        </actions>
+    </service>
+    <service verb="response" noun="Multi" >
+        <implements service="longservice.LongServices.store#domath"/>
+        <actions>
+            <script><![CDATA[
+                            result = a*b*c;
+                        ]]></script>
+        </actions>
+    </service>
+
+
+    <service verb="get" noun="GetStd" authenticate="anonymous-all">
+        <in-parameters>
+            <parameter name="codeStudent" required="true" type="String"/>
+        </in-parameters>
+        <out-parameters>
+            <parameter name="nameStudent" type="String"/>
+            <parameter name="codeStudent" type="String"/>
+        </out-parameters>
+        <actions>
+            <entity-find entity-name = "moqui.entity.Student" list="stdList">
+                <econdition field-name="codeStudent" operator="equals" from="codeStudent"/>
+            </entity-find>
+            <script>
+                hoTen = stdList.nameStudent
+                maSinhVien = stdList.codeStudent
+            </script>
+        </actions>
+    </service>
+
+    <service verb="get" noun="GetStdInfo" authenticate="anonymous-all">
+        <in-parameters>
+            <parameter name="codeStudent" required="true" type="String"/>
+        </in-parameters>
+        <out-parameters>
+            <parameter name="maSinhVien" type="String"/>
+            <parameter name="hoTen" type="String"/>
+            <parameter name="tenLop" type="String"/>
+            <parameter name="tenTruong" type="String"/>
+        </out-parameters>
+        <actions>
+            <entity-find entity-name = "moqui.entity.findStdAndClsAndScl" list="stdList">
+                <econdition field-name="codeStudent" operator="equals" from="codeStudent"/>
+            </entity-find>
+            <script>
+                maSinhVien = stdList.codeStudent
+                hoTen = stdList.nameStudent
+                tenLop = stdList.nameClass
+                tenTruong = stdList.nameSchool
+            </script>
+        </actions>
+
+    </service>
+
+<service verb="get" noun="TestGroovyStudent" authenticate="anonymous-all" >
+    <in-parameters>
+        <parameter name="codeStudent" required="true" type="String"/>
+    </in-parameters>
+    <out-parameters>
+        <parameter name="hoTen" type="String"/>
+        <parameter name="maSinhVien" type="String"/>
+    </out-parameters>
+    <actions>
+        <script>
+            import static org.moqui.util.ObjectUtilities.*
+            import static org.moqui.util.CollectionUtilities.*
+            import static org.moqui.util.StringUtilities.*
+            import java.sql.Timestamp
+
+            stdList_xafind = ec.entity.find("moqui.entity.findStdAndClsAndSchool")
+            .condition((org.moqui.entity.EntityCondition)
+            ec.entity.conditionFactory.makeActionConditionDirect("codeStudent", "equals", codeStudent, null, null, false, false, false, "false"))
+            stdList = stdList_xafind.list()
+            maSinhVien = stdList.codeStudent
+            hoTen = stdList.nameStudent
+            tenLop = stdList.nameClass
+            tenTruong = stdList.nameSchool
+            return;
+
+        </script>
+    </actions>
+
+</service>
+</services>

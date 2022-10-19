@@ -1,0 +1,1761 @@
+--- 2022-10-12 14:24:50.452 [           main] INFO                     org.eclipse.jetty.server.Server []
+ jetty-10.0.9; built: 2022-03-30T16:46:32.527Z; git: a9eaf8d5d73369acf610ce88f850c0d56c4b1113; jvm 11.0.16+11-LTS-199
+--- 2022-10-12 14:24:50.515 [           main] INFO  lipse.jetty.server.session.DefaultSessionIdManager []
+ Session workerName=node0
+--- 2022-10-12 14:24:56.560 [           main] INFO  g.eclipse.jetty.webapp.StandardDescriptorProcessor []
+ NO JSP Support for /, did not find org.eclipse.jetty.jsp.JettyJspServlet
+--- 2022-10-12 14:24:57.868 [           main] INFO          org.moqui.impl.webapp.MoquiContextListener []
+ Loading Webapp 'webroot' (Moqui Root Webapp) on ROOT, located at: E:\moqui-framework-3.0.0\execwartmp\ROOT\webapp
+--- 2022-10-12 14:24:58.023 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Initializing Moqui Framework version 3.0.0
+ - runtime directory: E:\moqui-framework-3.0.0\runtime
+ - runtime config:    E:\moqui-framework-3.0.0\runtime/conf/MoquiDevConf.xml
+--- 2022-10-12 14:24:58.023 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Running on Java 11.0.16 VM 11.0.16+11-LTS-199 Runtime 11.0.16+11-LTS-199
+--- 2022-10-12 14:24:58.559 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Added component tools              at file:E:/moqui-framework-3.0.0/runtime/base-component/tools
+--- 2022-10-12 14:24:58.569 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Added component webroot            at file:E:/moqui-framework-3.0.0/runtime/base-component/webroot
+--- 2022-10-12 14:24:58.571 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Added component training           at file:E:/moqui-framework-3.0.0/runtime/component/training
+--- 2022-10-12 14:24:58.571 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Components after depends-on sort: [tools, webroot, training]
+--- 2022-10-12 14:24:58.582 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Merging MoquiConf.xml file from component tools
+--- 2022-10-12 14:24:58.612 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Merging MoquiConf.xml file from component training
+--- 2022-10-12 14:24:58.615 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Merging runtime configuration at E:\moqui-framework-3.0.0\runtime/conf/MoquiDevConf.xml
+--- 2022-10-12 14:24:58.630 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property instance_purpose from default with value [dev]
+--- 2022-10-12 14:24:58.631 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property default_locale from default with value [en_US]
+--- 2022-10-12 14:24:58.631 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property default_time_zone from default with value [US/Pacific]
+--- 2022-10-12 14:24:58.631 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property database_time_zone from default with value [US/Pacific]
+--- 2022-10-12 14:24:58.631 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property webapp_https_enabled from default with value [false]
+--- 2022-10-12 14:24:58.631 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property webapp_allow_origins from default with value [*]
+--- 2022-10-12 14:24:58.631 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property webapp_handle_cors from default with value [true]
+--- 2022-10-12 14:24:58.631 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property webapp_status_ips from default with value [127.0.0.1]
+--- 2022-10-12 14:24:58.631 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property webapp_require_session_token from default with value [true]
+--- 2022-10-12 14:24:58.631 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property webapp_upload_executable_allow from default with value [false]
+--- 2022-10-12 14:24:58.631 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property entity_ds_db_conf from default with value [h2]
+--- 2022-10-12 14:24:58.631 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property entity_ds_host from default with value [127.0.0.1]
+--- 2022-10-12 14:24:58.631 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property entity_ds_database from default with value [moqui]
+--- 2022-10-12 14:24:58.666 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property entity_ds_url from default with value [jdbc:h2:E:\moqui-framework-3.0.0\runtime/db/h2/moqui;lock_timeout=30000]
+--- 2022-10-12 14:24:58.666 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property entity_ds_user from default with value [sa]
+--- 2022-10-12 14:24:58.666 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting pw/key property entity_ds_password from default
+--- 2022-10-12 14:24:58.666 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting pw/key property entity_ds_crypt_pass from default
+--- 2022-10-12 14:24:58.666 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting pw/key property entity_ds_crypt_pass_old from default
+--- 2022-10-12 14:24:58.666 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property entity_add_missing_runtime from default with value [false]
+--- 2022-10-12 14:24:58.666 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property entity_add_missing_startup from default with value [true]
+--- 2022-10-12 14:24:58.666 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property entity_lock_track from default with value [true]
+--- 2022-10-12 14:24:58.666 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property entity_statement_timeout from default with value [false]
+--- 2022-10-12 14:24:58.666 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property entity_empty_db_load from default with value [all]
+--- 2022-10-12 14:24:58.666 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property entity_ds_c1_disabled from default with value [true]
+--- 2022-10-12 14:24:58.666 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property entity_ds_c1_db_conf from default with value [mysql]
+--- 2022-10-12 14:24:58.666 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property scheduled_job_check_time from default with value [60]
+--- 2022-10-12 14:24:58.666 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property elasticsearch_url from default with value [http://127.0.0.1:9200]
+--- 2022-10-12 14:24:58.666 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property kibana_host from default with value [127.0.0.1]
+--- 2022-10-12 14:24:58.666 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Setting property kibana_port from default with value [5601]
+--- 2022-10-12 14:24:58.693 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Found default_time_zone US/Pacific: sun.util.calendar.ZoneInfo[id="US/Pacific",offset=-28800000,dstSavings=3600000,useDaylight=true,transitions=185,lastRule=java.util.SimpleTimeZone[id=US/Pacific,offset=-28800000,dstSavings=3600000,useDaylight=true,startYear=0,startMode=3,startMonth=2,startDay=8,startDayOfWeek=1,startTime=7200000,startTimeMode=0,endMode=3,endMonth=10,endDay=1,endDayOfWeek=1,endTime=7200000,endTimeMode=0]]
+--- 2022-10-12 14:24:58.693 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Default locale en_US, time zone sun.util.calendar.ZoneInfo[id="US/Pacific",offset=-28800000,dstSavings=3600000,useDaylight=true,transitions=185,lastRule=java.util.SimpleTimeZone[id=US/Pacific,offset=-28800000,dstSavings=3600000,useDaylight=true,startYear=0,startMode=3,startMonth=2,startDay=8,startDayOfWeek=1,startTime=7200000,startTimeMode=0,endMode=3,endMonth=10,endDay=1,endDayOfWeek=1,endTime=7200000,endTimeMode=0]]
+--- 2022-10-12 00:24:58.738 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Initializing worker ThreadPoolExecutor: queue limit 65535, pool-core 16, pool-max 24, pool-alive 60s
+--- 2022-10-12 00:24:58.781 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Initializing MClassLoader context MoquiStart$StartClassLoader cur class MoquiStart$StartClassLoader system null
+--- 2022-10-12 00:24:58.793 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Initialized MClassLoader with parent MoquiStart$StartClassLoader
+--- 2022-10-12 00:24:58.794 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Initialized ClassLoaders in 51ms
+--- 2022-10-12 00:24:58.797 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Not loading disabled ToolFactory with class: org.moqui.impl.tools.JackrabbitRunToolFactory
+--- 2022-10-12 00:24:58.798 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Not loading disabled ToolFactory with class: org.moqui.impl.tools.SubEthaSmtpToolFactory
+--- 2022-10-12 00:24:58.800 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Loading ToolFactory with class: org.moqui.impl.tools.MCacheToolFactory
+--- 2022-10-12 00:24:58.805 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Loading ToolFactory with class: org.moqui.impl.tools.H2ServerToolFactory
+--- 2022-10-12 00:24:58.818 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Cache Facade initialized
+--- 2022-10-12 00:24:59.114 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Resource Facade initialized
+--- 2022-10-12 00:24:59.271 [           main] WARN                           bitronix.tm.Configuration []
+ Cannot get the unique server ID for this JVM ('bitronix.tm.serverId'). Make sure it is configured and you use only US-ASCII characters. Will use IP address instead (unsafe for production usage!).
+--- 2022-10-12 00:24:59.360 [           main] WARN                     bitronix.tm.journal.DiskJournal []
+ active log file is unclean, did you call BitronixTransactionManager.shutdown() at the end of the last run?
+--- 2022-10-12 00:24:59.761 [           main] INFO        org.moqui.impl.context.TransactionFacadeImpl []
+ Internal transaction manager initialized: UserTransaction class bitronix.tm.BitronixTransactionManager, TransactionManager class bitronix.tm.BitronixTransactionManager
+--- 2022-10-12 00:24:59.761 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Transaction Facade initialized
+--- 2022-10-12 00:24:59.803 [           main] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Database time zone is sun.util.calendar.ZoneInfo[id="US/Pacific",offset=-28800000,dstSavings=3600000,useDaylight=true,transitions=185,lastRule=java.util.SimpleTimeZone[id=US/Pacific,offset=-28800000,dstSavings=3600000,useDaylight=true,startYear=0,startMode=3,startMonth=2,startDay=8,startDayOfWeek=1,startTime=7200000,startTimeMode=0,endMode=3,endMonth=10,endDay=1,endDayOfWeek=1,endTime=7200000,endTimeMode=0]]
+--- 2022-10-12 00:24:59.933 [           main] INFO  org.moqui.impl.context.TransactionInternalBitronix []
+ Initializing DataSource transactional_DS (h2) with properties: [user:sa, url:jdbc:h2:E:\moqui-framework-3.0.0\runtime/db/h2/moqui;lock_timeout=30000]
+--- 2022-10-12 00:25:00.600 [           main] INFO  org.moqui.impl.context.TransactionInternalBitronix []
+ Init DataSource transactional_DS (h2) isolation READ_COMMITTED (2), max pool 50
+--- 2022-10-12 00:25:00.614 [           main] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Skipping disabled datasource transactional#clone1
+--- 2022-10-12 00:25:00.620 [           main] INFO                   org.moqui.impl.entity.EntityCache []
+ Entity Cache initialized, distributed cache invalidate enabled: false
+--- 2022-10-12 00:25:00.636 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Entity Facade initialized
+--- 2022-10-12 00:25:00.730 [           main] INFO                      org.moqui.impl.service.RestApi []
+ Loaded REST API from moqui.rest.xml (76 paths, 86 methods)
+--- 2022-10-12 00:25:00.731 [           main] INFO                      org.moqui.impl.service.RestApi []
+ Loaded REST API files, 1 roots, in 51ms
+--- 2022-10-12 00:25:00.731 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Service Facade initialized
+--- 2022-10-12 00:25:00.745 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Screen Facade initialized
+--- 2022-10-12 00:25:00.745 [           main] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Loading entity definitions
+--- 2022-10-12 00:25:00.772 [           main] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found entities in 10 files in 27ms
+--- 2022-10-12 00:25:01.003 [           main] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found 0 view-entity definitions in database (DbViewEntity records)
+--- 2022-10-12 00:25:01.139 [           main] INFO                     org.moqui.impl.entity.FieldInfo []
+ Replacing column name VALUE with replace name THE_VALUE for entity moqui.screen.form.DbFormFieldAttribute
+--- 2022-10-12 00:25:01.144 [           main] INFO                     org.moqui.impl.entity.FieldInfo []
+ Replacing column name VALUE with replace name THE_VALUE for entity moqui.screen.form.DbFormFieldEntOptsCond
+--- 2022-10-12 00:25:01.161 [           main] WARN              org.moqui.impl.entity.EntityDefinition []
+ ===== TOREMOVE ===== entity moqui.security.ArtifactTarpitCheckView node view-entity isViewEntity true org.moqui.impl.entity.EntityDefinition@2197be42
+--- 2022-10-12 00:25:01.208 [           main] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Loaded 195 entity definitions in 463ms
+--- 2022-10-12 00:25:01.227 [           main] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Checking tables for entities in groups [transactional]
+--- 2022-10-12 00:25:01.238 [           main] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Checked tables for all entities in 0.03 seconds
+--- 2022-10-12 00:25:01.249 [           main] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Loaded 6 Entity ECA rules from 1 .eecas.xml files, 0 rules have no id, 6 EECA rules active
+--- 2022-10-12 00:25:01.250 [           main] INFO            org.moqui.impl.service.ServiceFacadeImpl []
+ Loaded 0 Service ECA rules from 0 .secas.xml files, 0 rules have no id, 0 SECA rules active
+--- 2022-10-12 00:25:01.251 [           main] INFO            org.moqui.impl.service.ServiceFacadeImpl []
+ No distributed-factory specified, distributed async service calls will be run local only
+--- 2022-10-12 00:25:01.259 [           main] INFO            org.moqui.impl.service.ServiceFacadeImpl []
+ Starting Scheduled Service Job Runner, checking for jobs every 60 seconds after a 120 second initial delay
+--- 2022-10-12 00:25:01.279 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Initializing ToolFactory: MCache
+--- 2022-10-12 00:25:01.279 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Initializing ToolFactory: H2Server
+--- 2022-10-12 00:25:01.476 [           main] INFO            org.moqui.impl.tools.H2ServerToolFactory []
+ Started H2 remote server on port 9092 status: TCP server running at tcp://192.168.56.1:9092 (only local connections)
+--- 2022-10-12 00:25:01.476 [           main] INFO            org.moqui.impl.tools.H2ServerToolFactory []
+ H2 args: [-tcpPort, 9092, -ifExists, -baseDir, E:\moqui-framework-3.0.0\runtime/db/h2]
+--- 2022-10-12 00:25:01.487 [           main] INFO            org.moqui.impl.tools.H2ServerToolFactory []
+ Found shutdown hook: java.util.logging.LogManager$Cleaner Thread[Logging-Cleaner,5,main]
+--- 2022-10-12 00:25:01.487 [           main] INFO            org.moqui.impl.tools.H2ServerToolFactory []
+ Found shutdown hook: org.eclipse.jetty.util.thread.ShutdownThread Thread[JettyShutdownThread,5,main]
+--- 2022-10-12 00:25:01.487 [           main] INFO            org.moqui.impl.tools.H2ServerToolFactory []
+ Found shutdown hook: org.h2.engine.OnExitDatabaseCloser Thread[Thread-11,5,main]
+--- 2022-10-12 00:25:01.487 [           main] INFO            org.moqui.impl.tools.H2ServerToolFactory []
+ Removing H2 shutdown hook with class org.h2.engine.OnExitDatabaseCloser
+--- 2022-10-12 00:25:01.590 [           main] INFO            org.moqui.impl.context.ElasticFacadeImpl []
+ Initializing ElasticFacade Client for cluster default at http://127.0.0.1:9200
+--- 2022-10-12 00:25:02.077 [           main] WARN  rg.eclipse.jetty.util.ssl.SslContextFactory.config []
+ Trusting all certificates configured for Client@20231384[provider=null,keyStore=null,trustStore=null]
+--- 2022-10-12 00:25:02.078 [           main] WARN  rg.eclipse.jetty.util.ssl.SslContextFactory.config []
+ No Client EndPointIdentificationAlgorithm configured for Client@20231384[provider=null,keyStore=null,trustStore=null]
+--- 2022-10-12 00:25:02.158 [           main] WARN            org.moqui.impl.context.ElasticFacadeImpl []
+ Error connecting to ElasticSearch cluster default at http://127.0.0.1:9200, try 1 of 20: org.moqui.BaseException: Error calling HTTP request to http://127.0.0.1:9200/
+--- 2022-10-12 00:25:03.161 [           main] WARN            org.moqui.impl.context.ElasticFacadeImpl []
+ Error connecting to ElasticSearch cluster default at http://127.0.0.1:9200, try 2 of 20: org.moqui.BaseException: Error calling HTTP request to http://127.0.0.1:9200/
+--- 2022-10-12 00:25:04.173 [           main] WARN            org.moqui.impl.context.ElasticFacadeImpl []
+ Error connecting to ElasticSearch cluster default at http://127.0.0.1:9200, try 3 of 20: org.moqui.BaseException: Error calling HTTP request to http://127.0.0.1:9200/
+--- 2022-10-12 00:25:05.187 [           main] WARN            org.moqui.impl.context.ElasticFacadeImpl []
+ Error connecting to ElasticSearch cluster default at http://127.0.0.1:9200, try 4 of 20: org.moqui.BaseException: Error calling HTTP request to http://127.0.0.1:9200/
+--- 2022-10-12 00:25:06.202 [           main] WARN            org.moqui.impl.context.ElasticFacadeImpl []
+ Error connecting to ElasticSearch cluster default at http://127.0.0.1:9200, try 5 of 20: org.moqui.BaseException: Error calling HTTP request to http://127.0.0.1:9200/
+--- 2022-10-12 00:25:07.217 [           main] WARN            org.moqui.impl.context.ElasticFacadeImpl []
+ Error connecting to ElasticSearch cluster default at http://127.0.0.1:9200, try 6 of 20: org.moqui.BaseException: Error calling HTTP request to http://127.0.0.1:9200/
+--- 2022-10-12 00:25:08.230 [           main] WARN            org.moqui.impl.context.ElasticFacadeImpl []
+ Error connecting to ElasticSearch cluster default at http://127.0.0.1:9200, try 7 of 20: org.moqui.BaseException: Error calling HTTP request to http://127.0.0.1:9200/
+--- 2022-10-12 00:25:09.247 [           main] WARN            org.moqui.impl.context.ElasticFacadeImpl []
+ Error connecting to ElasticSearch cluster default at http://127.0.0.1:9200, try 8 of 20: org.moqui.BaseException: Error calling HTTP request to http://127.0.0.1:9200/
+--- 2022-10-12 00:25:10.259 [           main] WARN            org.moqui.impl.context.ElasticFacadeImpl []
+ Error connecting to ElasticSearch cluster default at http://127.0.0.1:9200, try 9 of 20: org.moqui.BaseException: Error calling HTTP request to http://127.0.0.1:9200/
+--- 2022-10-12 00:25:11.269 [           main] WARN            org.moqui.impl.context.ElasticFacadeImpl []
+ Error connecting to ElasticSearch cluster default at http://127.0.0.1:9200, try 10 of 20: org.moqui.BaseException: Error calling HTTP request to http://127.0.0.1:9200/
+--- 2022-10-12 00:25:12.273 [           main] WARN            org.moqui.impl.context.ElasticFacadeImpl []
+ Error connecting to ElasticSearch cluster default at http://127.0.0.1:9200, try 11 of 20: org.moqui.BaseException: Error calling HTTP request to http://127.0.0.1:9200/
+--- 2022-10-12 00:25:13.284 [           main] WARN            org.moqui.impl.context.ElasticFacadeImpl []
+ Error connecting to ElasticSearch cluster default at http://127.0.0.1:9200, try 12 of 20: org.moqui.BaseException: Error calling HTTP request to http://127.0.0.1:9200/
+--- 2022-10-12 00:25:14.293 [           main] WARN            org.moqui.impl.context.ElasticFacadeImpl []
+ Error connecting to ElasticSearch cluster default at http://127.0.0.1:9200, try 13 of 20: org.moqui.BaseException: Error calling HTTP request to http://127.0.0.1:9200/
+--- 2022-10-12 00:25:15.303 [           main] WARN            org.moqui.impl.context.ElasticFacadeImpl []
+ Error connecting to ElasticSearch cluster default at http://127.0.0.1:9200, try 14 of 20: org.moqui.BaseException: Error calling HTTP request to http://127.0.0.1:9200/
+--- 2022-10-12 00:25:16.318 [           main] WARN            org.moqui.impl.context.ElasticFacadeImpl []
+ Error connecting to ElasticSearch cluster default at http://127.0.0.1:9200, try 15 of 20: org.moqui.BaseException: Error calling HTTP request to http://127.0.0.1:9200/
+--- 2022-10-12 00:25:17.332 [           main] WARN            org.moqui.impl.context.ElasticFacadeImpl []
+ Error connecting to ElasticSearch cluster default at http://127.0.0.1:9200, try 16 of 20: org.moqui.BaseException: Error calling HTTP request to http://127.0.0.1:9200/
+--- 2022-10-12 00:25:18.345 [           main] WARN            org.moqui.impl.context.ElasticFacadeImpl []
+ Error connecting to ElasticSearch cluster default at http://127.0.0.1:9200, try 17 of 20: org.moqui.BaseException: Error calling HTTP request to http://127.0.0.1:9200/
+--- 2022-10-12 00:25:19.356 [           main] WARN            org.moqui.impl.context.ElasticFacadeImpl []
+ Error connecting to ElasticSearch cluster default at http://127.0.0.1:9200, try 18 of 20: org.moqui.BaseException: Error calling HTTP request to http://127.0.0.1:9200/
+--- 2022-10-12 00:25:20.368 [           main] WARN            org.moqui.impl.context.ElasticFacadeImpl []
+ Error connecting to ElasticSearch cluster default at http://127.0.0.1:9200, try 19 of 20: org.moqui.BaseException: Error calling HTTP request to http://127.0.0.1:9200/
+--- 2022-10-12 00:25:21.408 [           main] ERROR           org.moqui.impl.context.ElasticFacadeImpl []
+ Error initializing ElasticClient for cluster default: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information
+--- 2022-10-12 00:25:21.408 [           main] WARN            org.moqui.impl.context.ElasticFacadeImpl []
+ No Elastic Client found with name 'logger' or 'default', not initializing ElasticSearchLogger
+--- 2022-10-12 00:25:21.408 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Elastic Facade initialized
+--- 2022-10-12 00:25:21.418 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Execution Context Factory initialized in 23.502 seconds
+--- 2022-10-12 00:25:21.426 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Found 149 Enumeration records, NOT loading empty-db-load data types (all)
+--- 2022-10-12 00:25:21.477 [           main] INFO  org.moqui.impl.context.ExecutionContextFactoryImpl []
+ Initializing webapp webroot http://null:null https://null:null https enabled? false
+--- 2022-10-12 00:25:21.482 [           main] INFO          org.moqui.impl.webapp.MoquiContextListener []
+ Added webapp filter ElasticRequestLogFilter on: [/*], [REQUEST]
+--- 2022-10-12 00:25:21.483 [           main] INFO          org.moqui.impl.webapp.MoquiContextListener []
+ Added webapp filter ElasticAuthFilter on: [/elastic/*], []
+--- 2022-10-12 00:25:21.484 [           main] INFO          org.moqui.impl.webapp.MoquiContextListener []
+ Added webapp filter KibanaAuthFilter on: [/kibana/*], []
+--- 2022-10-12 00:25:21.487 [           main] INFO          org.moqui.impl.webapp.MoquiContextListener []
+ Added webapp listener org.moqui.impl.webapp.MoquiSessionListener
+--- 2022-10-12 00:25:21.547 [           main] INFO          org.moqui.impl.webapp.MoquiContextListener []
+ Added servlet MoquiServlet on: [/*]
+--- 2022-10-12 00:25:21.550 [           main] INFO          org.moqui.impl.webapp.MoquiContextListener []
+ Added servlet MoquiFopServlet on: [/fop/*]
+--- 2022-10-12 00:25:21.572 [           main] INFO          org.moqui.impl.webapp.MoquiContextListener []
+ Added servlet ElasticSearchProxy on: [/elastic/*]
+--- 2022-10-12 00:25:21.583 [           main] INFO          org.moqui.impl.webapp.MoquiContextListener []
+ Added servlet KibanaProxy on: [/kibana/*]
+--- 2022-10-12 00:25:21.587 [           main] INFO          org.moqui.impl.webapp.MoquiContextListener []
+ Added servlet H2Console on: [/h2/*]
+--- 2022-10-12 00:25:21.587 [           main] INFO          org.moqui.impl.webapp.MoquiContextListener []
+ Found WebSocket ServerContainer org.eclipse.jetty.websocket.javax.server.internal.JavaxWebSocketServerContainer
+--- 2022-10-12 00:25:21.608 [           main] INFO          org.moqui.impl.webapp.MoquiContextListener []
+ Added WebSocket endpoint /notws for class org.moqui.impl.webapp.NotificationEndpoint
+--- 2022-10-12 00:25:21.609 [           main] INFO          org.moqui.impl.webapp.MoquiContextListener []
+ Added WebSocket endpoint /groovysh for class org.moqui.impl.webapp.GroovyShellEndpoint
+--- 2022-10-12 00:25:21.609 [           main] INFO          org.moqui.impl.webapp.MoquiContextListener []
+ Moqui Framework initialized in 24.018 seconds
+--- 2022-10-12 00:25:21.610 [           main] ERROR      org.moqui.impl.webapp.ElasticRequestLogFilter []
+ In ElasticRequestLogFilter init could not find ElasticClient with name logger or default, not starting
+--- 2022-10-12 00:25:21.881 [           main] INFO               org.moqui.impl.webapp.MoquiFopServlet []
+ MoquiFopServlet initialized for webapp webroot
+--- 2022-10-12 00:25:21.881 [           main] INFO                  org.moqui.impl.webapp.MoquiServlet []
+ MoquiServlet initialized for webapp webroot
+--- 2022-10-12 00:25:21.881 [           main] INFO     org.eclipse.jetty.server.handler.ContextHandler []
+ Started o.e.j.w.WebAppContext@61019f59{Moqui Root Webapp,/,file:///E:/moqui-framework-3.0.0/execwartmp/ROOT/webapp/,AVAILABLE}{file:/E:/moqui-framework-3.0.0/moqui.war}
+--- 2022-10-12 00:25:21.891 [           main] INFO          org.eclipse.jetty.server.AbstractConnector []
+ Started ServerConnector@1a7288a3{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+--- 2022-10-12 00:25:21.894 [           main] INFO                     org.eclipse.jetty.server.Server []
+ Started Server@ab7a938{STARTING}[10.0.9,sto=30000] @44362ms
+--- 2022-10-12 00:26:11.048 [tp1887699190-50] WARN                    org.moqui.impl.util.SimpleSigner []
+ Could not initialize signing key qz-private-key.pem: org.moqui.BaseException: Could not find signing key resource qz-private-key.pem on classpath
+--- 2022-10-12 00:26:11.737 [   RequireNewTx] INFO                org.moqui.impl.entity.EntityDataFeed []
+ Built entity.data.feed.info cache in 10ms, entries for 0 entities
+--- 2022-10-12 00:26:11.742 [   RequireNewTx] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Created 168 automatic reverse relationships
+--- 2022-10-12 00:26:12.226 [tp1887699190-50] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ Redirecting to /Login instead of rendering [qapps]
+--- 2022-10-12 00:26:12.246 [tp1887699190-50] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ qapps [] in 467ms (text/html;charset=utf-8) session node02m7vt3i3eajd17pvwgkbwzazx0
+--- 2022-10-12 00:26:14.094 [tp1887699190-50] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ Login [] in 1827ms (text/html;charset=utf-8) session node02m7vt3i3eajd17pvwgkbwzazx0
+--- 2022-10-12 00:26:16.338 [tp1887699190-56] WARN                 org.moqui.impl.util.MoquiShiroRealm []
+ Web login with IPv6 client IP 0:0:0:0:0:0:0:1 for userId EX_JOHN_DOE, not checking ipAllowed
+--- 2022-10-12 00:26:16.354 [  MoquiWorker-2] WARN              org.moqui.impl.context.ContextJavaUtil []
+ Potential lock conflict entity moqui.server.Visit pk 100303 thread MoquiWorker-2 TX 19 began 2022-10-12 00:26:16.353 at: 
+00: AT_ENTITY:moqui.security.UserLoginHistory (AUTHZA_CREATE:create) 1ms TX 19
+== OTHER LOCK 0 thread qtp1887699190-56 TX 17 began 2022-10-12 00:26:16.048 at: 
+00: AT_ENTITY:moqui.server.Visit (AUTHZA_UPDATE:update) 211ms TX 17
+01: AT_XML_SCREEN_TRANS:component://webroot/screen/webroot/Login.xml/login (AUTHZA_VIEW:text/html) 306ms TX 17
+02: AT_XML_SCREEN:component://webroot/screen/webroot/Login.xml (AUTHZA_VIEW) 306ms TX 17
+03: AT_XML_SCREEN:component://webroot/screen/webroot.xml (AUTHZA_VIEW) 306ms TX 17
+--- 2022-10-12 00:26:16.384 [tp1887699190-56] WARN                         org.moqui.util.WebUtilities []
+ Tried getAttributeNames() on invalidated session node02m7vt3i3eajd17pvwgkbwzazx0: java.lang.IllegalStateException: Invalid for read: id=node02m7vt3i3eajd17pvwgkbwzazx0 created=1665559571064 accessed=1665559576035 lastaccessed=1665559574486 maxInactiveMs=3600000 expiry=1665563176035
+--- 2022-10-12 00:26:16.385 [tp1887699190-56] WARN                         org.moqui.util.WebUtilities []
+ Tried getAttributeNames() on invalidated session node02m7vt3i3eajd17pvwgkbwzazx0: java.lang.IllegalStateException: Invalid for read: id=node02m7vt3i3eajd17pvwgkbwzazx0 created=1665559571064 accessed=1665559576035 lastaccessed=1665559574486 maxInactiveMs=3600000 expiry=1665563176035
+--- 2022-10-12 00:26:16.385 [tp1887699190-56] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ Transition Login/login in 337ms, redirecting to screen path URL: http://localhost:8080/qapps
+--- 2022-10-12 00:26:16.528 [  MoquiWorker-1] INFO            org.moqui.impl.context.MessageFacadeImpl []
+ [info] Geo IP lookup disabled
+--- 2022-10-12 00:26:16.528 [tp1887699190-56] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ qapps [] in 128ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:26:17.945 [tp1887699190-50] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/AppList [] in 310ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:26:24.236 [tp1887699190-50] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools [] in 108ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:26:24.341 [tp1887699190-56] INFO                      org.moqui.impl.service.RestApi []
+ Loaded REST API from moqui.rest.xml (76 paths, 86 methods)
+--- 2022-10-12 00:26:24.342 [tp1887699190-56] INFO                      org.moqui.impl.service.RestApi []
+ Loaded REST API files, 1 roots, in 15ms
+--- 2022-10-12 00:26:24.547 [tp1887699190-56] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/dashboard [] in 286ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:26:24.986 [tp1887699190-56] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service [] in 6ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:26:25.469 [tp1887699190-50] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceReference [] in 426ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:26:35.006 [tp1887699190-50] WARN              org.moqui.impl.entity.EntityFacadeImpl []
+ No location cache found for entity-name [Call], reloading ALL entity file and DB locations
+--- 2022-10-12 00:26:35.020 [tp1887699190-50] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found entities in 10 files in 14ms
+--- 2022-10-12 00:26:35.021 [tp1887699190-50] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found 0 view-entity definitions in database (DbViewEntity records)
+--- 2022-10-12 00:26:35.021 [tp1887699190-50] WARN              org.moqui.impl.entity.EntityFacadeImpl []
+ No definition found for entity-name [Call]
+--- 2022-10-12 00:26:35.031 [tp1887699190-50] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [serviceName:kienservice.KienServices.response#Call] in 151ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:26:38.628 [tp1887699190-56] INFO          org.moqui.impl.service.ServiceCallSyncImpl []
+ No service with name Sum, isEntityAutoPattern=true, path=null, verb=Sum, noun=null, noun is entity? false
+--- 2022-10-12 00:26:38.629 [tp1887699190-56] ERROR                   org.moqui.impl.actions.XmlAction []
+ Error running groovy script (org.moqui.service.ServiceException: Could not find service with name Sum): 
+1 : import static org.moqui.util.ObjectUtilities.*
+2 : import static org.moqui.util.CollectionUtilities.*
+3 : import static org.moqui.util.StringUtilities.*
+4 : import java.sql.Timestamp
+5 : // these are in the context by default: ExecutionContext ec, Map<String, Object> context, Map<String, Object> result
+6 :     if (true) {
+7 :         def call_service_result = ec.service.sync().name("Sum")
+8 :             .parameters([inValue:inValue, inValue1:inValue1,  sum:'outValue']).call()
+9 :         if (outValue != null) { if (call_service_result) outValue.putAll(call_service_result) } else { outValue = call_service_result }
+10 :         if (ec.message.hasError()) return
+11 :     }
+12 : 
+13 : // begin inline script
+14 : 
+15 : // end inline script
+16 : // make sure the last statement is not considered the return value
+17 : return;
+
+
+--- 2022-10-12 00:26:38.630 [tp1887699190-56] WARN        org.moqui.impl.context.TransactionFacadeImpl []
+ Transaction rollback. The rollback was originally caused by: Error running service kienservice.KienServices.response#Call (Throwable)
+org.moqui.service.ServiceException: Could not find service with name Sum
+	at org.moqui.impl.service.ServiceCallSyncImpl.callSingle(ServiceCallSyncImpl.java:223) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.call(ServiceCallSyncImpl.java:125) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at kienservice_KienServices_response_Call.run(kienservice_KienServices_response_Call:7) ~[?:?]
+	at org.moqui.impl.actions.XmlAction.run(XmlAction.java:67) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.runner.InlineServiceRunner.runService(InlineServiceRunner.java:59) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.callSingle(ServiceCallSyncImpl.java:322) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.call(ServiceCallSyncImpl.java:125) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions.run(component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions:9) ~[?:?]
+	at org.moqui.impl.actions.XmlAction.run(XmlAction.java:67) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenDefinition$TransitionItem.run(ScreenDefinition.groovy:987) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:749) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.internalRender(ScreenRenderImpl.groovy:454) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.render(ScreenRenderImpl.groovy:170) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.webapp.MoquiServlet.service(MoquiServlet.groovy:118) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750) ~[moqui_temp3927582242763878049WEB-INF_lib_javax.servlet-api-4.0.1.jar.:4.0.1]
+	at org.moqui.impl.webapp.ElasticRequestLogFilter.doFilter(ElasticRequestLogFilter.groovy:96) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+--- 2022-10-12 00:26:38.641 [tp1887699190-56] WARN        org.moqui.impl.context.TransactionFacadeImpl []
+ Transaction rollback for [Error running service kienservice.KienServices.response#Call (Throwable)]. Here is the current location: 
+org.moqui.BaseException: Rollback location
+	at org.moqui.impl.context.TransactionFacadeImpl.rollback(TransactionFacadeImpl.groovy:467) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.context.TransactionFacadeImpl.rollback(TransactionFacadeImpl.groovy:443) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.callSingle(ServiceCallSyncImpl.java:347) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.call(ServiceCallSyncImpl.java:125) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions.run(component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions:9) ~[?:?]
+	at org.moqui.impl.actions.XmlAction.run(XmlAction.java:67) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenDefinition$TransitionItem.run(ScreenDefinition.groovy:987) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:749) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.internalRender(ScreenRenderImpl.groovy:454) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.render(ScreenRenderImpl.groovy:170) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.webapp.MoquiServlet.service(MoquiServlet.groovy:118) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750) ~[moqui_temp3927582242763878049WEB-INF_lib_javax.servlet-api-4.0.1.jar.:4.0.1]
+	at org.moqui.impl.webapp.ElasticRequestLogFilter.doFilter(ElasticRequestLogFilter.groovy:96) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+--- 2022-10-12 00:26:38.649 [tp1887699190-56] WARN          org.moqui.impl.service.ServiceCallSyncImpl []
+ Error running service kienservice.KienServices.response#Call (Throwable) Artifact stack: kienservice.KienServices.response#Call, component://tools/screen/Tools/Service/ServiceRun.xml/run, component://tools/screen/Tools/Service/ServiceRun.xml, component://tools/screen/Tools/Service.xml, component://tools/screen/Tools.xml, component://webroot/screen/webroot/apps.xml, component://webroot/screen/webroot.xml
+org.moqui.service.ServiceException: Could not find service with name Sum
+	at org.moqui.impl.service.ServiceCallSyncImpl.callSingle(ServiceCallSyncImpl.java:223) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.call(ServiceCallSyncImpl.java:125) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at kienservice_KienServices_response_Call.run(kienservice_KienServices_response_Call:7) ~[?:?]
+	at org.moqui.impl.actions.XmlAction.run(XmlAction.java:67) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.runner.InlineServiceRunner.runService(InlineServiceRunner.java:59) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.callSingle(ServiceCallSyncImpl.java:322) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.call(ServiceCallSyncImpl.java:125) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions.run(component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions:9) ~[?:?]
+	at org.moqui.impl.actions.XmlAction.run(XmlAction.java:67) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenDefinition$TransitionItem.run(ScreenDefinition.groovy:987) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:749) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.internalRender(ScreenRenderImpl.groovy:454) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.render(ScreenRenderImpl.groovy:170) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.webapp.MoquiServlet.service(MoquiServlet.groovy:118) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750) ~[moqui_temp3927582242763878049WEB-INF_lib_javax.servlet-api-4.0.1.jar.:4.0.1]
+	at org.moqui.impl.webapp.ElasticRequestLogFilter.doFilter(ElasticRequestLogFilter.groovy:96) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+--- 2022-10-12 00:26:38.650 [tp1887699190-56] ERROR           org.moqui.impl.context.MessageFacadeImpl []
+ Could not find service with name Sum
+--- 2022-10-12 00:26:38.657 [tp1887699190-56] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ Transition apps/tools/Service/ServiceRun/run in 151ms, JSON redirect to: /apps/tools/Service/ServiceRun?doingRun=Y&serviceName=kienservice.KienServices.response%23Call
+--- 2022-10-12 00:27:01.370 [oquiScheduled-2] INFO           org.moqui.impl.service.ScheduledJobRunner []
+ Running job render_ScheduledScreens_frequent run 100153 (last run 2022-10-11 03:45:38.116, schedule 2022-10-12T00:15-07:00[US/Pacific])
+--- 2022-10-12 00:27:01.379 [oquiScheduled-2] INFO           org.moqui.impl.service.ScheduledJobRunner []
+ Ran 1 Service Jobs starting 2022-10-12T00:27:01.288022400-07:00[US/Pacific] (active: 4, paused: 6)
+--- 2022-10-12 00:30:01.297 [oquiScheduled-2] INFO           org.moqui.impl.service.ScheduledJobRunner []
+ Running job render_ScheduledScreens_frequent run 100154 (last run 2022-10-12 00:27:01.288, schedule 2022-10-12T00:30-07:00[US/Pacific])
+--- 2022-10-12 00:30:01.299 [oquiScheduled-2] INFO           org.moqui.impl.service.ScheduledJobRunner []
+ Ran 1 Service Jobs starting 2022-10-12T00:30:01.292892400-07:00[US/Pacific] (active: 4, paused: 6)
+--- 2022-10-12 00:31:51.086 [tp1887699190-18] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ qapps/tools/Service/ServiceRun [inValue:12, submitButton:submitButton, moquiFormName:ServiceParameters, serviceName:kienservice.KienServices.response#Call, inValue1:12, moquiSessionToken:YBNUDkUbCvRhDT9vDB3N, _fileUploadList:[]] in 131ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:31:51.368 [tp1887699190-59] INFO                org.moqui.impl.context.WebFacadeImpl []
+ Streamed 1150 bytes from location component://webroot/screen/webroot/favicon.ico
+--- 2022-10-12 00:31:51.422 [tp1887699190-58] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools [serviceName:kienservice.KienServices.response#Call] in 89ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:31:51.439 [tp1887699190-57] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service [serviceName:kienservice.KienServices.response#Call] in 2ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:31:51.500 [tp1887699190-57] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found entities in 10 files in 13ms
+--- 2022-10-12 00:31:51.501 [tp1887699190-57] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found 0 view-entity definitions in database (DbViewEntity records)
+--- 2022-10-12 00:31:51.501 [tp1887699190-57] WARN              org.moqui.impl.entity.EntityFacadeImpl []
+ No location cache found for entity-name [Call], reloading ALL entity file and DB locations
+--- 2022-10-12 00:31:51.514 [tp1887699190-57] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found entities in 10 files in 13ms
+--- 2022-10-12 00:31:51.514 [tp1887699190-57] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found 0 view-entity definitions in database (DbViewEntity records)
+--- 2022-10-12 00:31:51.514 [tp1887699190-57] WARN              org.moqui.impl.entity.EntityFacadeImpl []
+ No definition found for entity-name [Call]
+--- 2022-10-12 00:31:51.517 [tp1887699190-57] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [serviceName:kienservice.KienServices.response#Call] in 36ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:31:53.503 [tp1887699190-58] WARN            org.moqui.impl.service.ServiceFacadeImpl []
+ Service KienServices.Sum#null not found; used relative location [service/KienServices.xml]
+--- 2022-10-12 00:31:53.503 [tp1887699190-58] ERROR                   org.moqui.impl.actions.XmlAction []
+ Error running groovy script (org.moqui.service.ServiceException: Service not found with name KienServices.Sum): 
+1 : import static org.moqui.util.ObjectUtilities.*
+2 : import static org.moqui.util.CollectionUtilities.*
+3 : import static org.moqui.util.StringUtilities.*
+4 : import java.sql.Timestamp
+5 : // these are in the context by default: ExecutionContext ec, Map<String, Object> context, Map<String, Object> result
+6 :     if (true) {
+7 :         def call_service_result = ec.service.sync().name("KienServices.Sum")
+8 :             .parameters([inValue:inValue, inValue1:inValue1,  sum:'outValue']).call()
+9 :         if (outValue != null) { if (call_service_result) outValue.putAll(call_service_result) } else { outValue = call_service_result }
+10 :         if (ec.message.hasError()) return
+11 :     }
+12 : 
+13 : // begin inline script
+14 : 
+15 : // end inline script
+16 : // make sure the last statement is not considered the return value
+17 : return;
+
+
+--- 2022-10-12 00:31:53.504 [tp1887699190-58] WARN        org.moqui.impl.context.TransactionFacadeImpl []
+ Transaction rollback. The rollback was originally caused by: Error running service kienservice.KienServices.response#Call (Throwable)
+org.moqui.service.ServiceException: Service not found with name KienServices.Sum
+	at org.moqui.impl.service.ServiceCallImpl.serviceNameInternal(ServiceCallImpl.java:55) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.name(ServiceCallSyncImpl.java:40) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at kienservice_KienServices_response_Call.run(kienservice_KienServices_response_Call:7) ~[?:?]
+	at org.moqui.impl.actions.XmlAction.run(XmlAction.java:67) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.runner.InlineServiceRunner.runService(InlineServiceRunner.java:59) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.callSingle(ServiceCallSyncImpl.java:322) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.call(ServiceCallSyncImpl.java:125) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions.run(component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions:9) ~[?:?]
+	at org.moqui.impl.actions.XmlAction.run(XmlAction.java:67) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenDefinition$TransitionItem.run(ScreenDefinition.groovy:987) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:749) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.internalRender(ScreenRenderImpl.groovy:454) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.render(ScreenRenderImpl.groovy:170) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.webapp.MoquiServlet.service(MoquiServlet.groovy:118) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750) ~[moqui_temp3927582242763878049WEB-INF_lib_javax.servlet-api-4.0.1.jar.:4.0.1]
+	at org.moqui.impl.webapp.ElasticRequestLogFilter.doFilter(ElasticRequestLogFilter.groovy:96) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+--- 2022-10-12 00:31:53.505 [tp1887699190-58] WARN        org.moqui.impl.context.TransactionFacadeImpl []
+ Transaction rollback for [Error running service kienservice.KienServices.response#Call (Throwable)]. Here is the current location: 
+org.moqui.BaseException: Rollback location
+	at org.moqui.impl.context.TransactionFacadeImpl.rollback(TransactionFacadeImpl.groovy:467) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.context.TransactionFacadeImpl.rollback(TransactionFacadeImpl.groovy:443) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.callSingle(ServiceCallSyncImpl.java:347) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.call(ServiceCallSyncImpl.java:125) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions.run(component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions:9) ~[?:?]
+	at org.moqui.impl.actions.XmlAction.run(XmlAction.java:67) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenDefinition$TransitionItem.run(ScreenDefinition.groovy:987) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:749) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.internalRender(ScreenRenderImpl.groovy:454) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.render(ScreenRenderImpl.groovy:170) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.webapp.MoquiServlet.service(MoquiServlet.groovy:118) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750) ~[moqui_temp3927582242763878049WEB-INF_lib_javax.servlet-api-4.0.1.jar.:4.0.1]
+	at org.moqui.impl.webapp.ElasticRequestLogFilter.doFilter(ElasticRequestLogFilter.groovy:96) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+--- 2022-10-12 00:31:53.506 [tp1887699190-58] WARN          org.moqui.impl.service.ServiceCallSyncImpl []
+ Error running service kienservice.KienServices.response#Call (Throwable) Artifact stack: kienservice.KienServices.response#Call, component://tools/screen/Tools/Service/ServiceRun.xml/run, component://tools/screen/Tools/Service/ServiceRun.xml, component://tools/screen/Tools/Service.xml, component://tools/screen/Tools.xml, component://webroot/screen/webroot/apps.xml, component://webroot/screen/webroot.xml
+org.moqui.service.ServiceException: Service not found with name KienServices.Sum
+	at org.moqui.impl.service.ServiceCallImpl.serviceNameInternal(ServiceCallImpl.java:55) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.name(ServiceCallSyncImpl.java:40) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at kienservice_KienServices_response_Call.run(kienservice_KienServices_response_Call:7) ~[?:?]
+	at org.moqui.impl.actions.XmlAction.run(XmlAction.java:67) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.runner.InlineServiceRunner.runService(InlineServiceRunner.java:59) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.callSingle(ServiceCallSyncImpl.java:322) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.call(ServiceCallSyncImpl.java:125) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions.run(component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions:9) ~[?:?]
+	at org.moqui.impl.actions.XmlAction.run(XmlAction.java:67) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenDefinition$TransitionItem.run(ScreenDefinition.groovy:987) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:749) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.internalRender(ScreenRenderImpl.groovy:454) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.render(ScreenRenderImpl.groovy:170) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.webapp.MoquiServlet.service(MoquiServlet.groovy:118) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750) ~[moqui_temp3927582242763878049WEB-INF_lib_javax.servlet-api-4.0.1.jar.:4.0.1]
+	at org.moqui.impl.webapp.ElasticRequestLogFilter.doFilter(ElasticRequestLogFilter.groovy:96) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+--- 2022-10-12 00:31:53.507 [tp1887699190-58] ERROR           org.moqui.impl.context.MessageFacadeImpl []
+ Service not found with name KienServices.Sum
+--- 2022-10-12 00:31:53.510 [tp1887699190-58] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ Transition apps/tools/Service/ServiceRun/run in 19ms, JSON redirect to: /apps/tools/Service/ServiceRun?doingRun=Y&serviceName=kienservice.KienServices.response%23Call
+--- 2022-10-12 00:37:41.100 [tp1887699190-80] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found entities in 10 files in 14ms
+--- 2022-10-12 00:37:41.101 [tp1887699190-80] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found 0 view-entity definitions in database (DbViewEntity records)
+--- 2022-10-12 00:37:41.101 [tp1887699190-80] WARN              org.moqui.impl.entity.EntityFacadeImpl []
+ No location cache found for entity-name [Call], reloading ALL entity file and DB locations
+--- 2022-10-12 00:37:41.120 [tp1887699190-80] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found entities in 10 files in 19ms
+--- 2022-10-12 00:37:41.120 [tp1887699190-80] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found 0 view-entity definitions in database (DbViewEntity records)
+--- 2022-10-12 00:37:41.120 [tp1887699190-80] WARN              org.moqui.impl.entity.EntityFacadeImpl []
+ No definition found for entity-name [Call]
+--- 2022-10-12 00:37:41.123 [tp1887699190-80] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [inValue:12, submitButton:submitButton, moquiFormName:ServiceParameters, serviceName:kienservice.KienServices.response#Call, inValue1:12, moquiSessionToken:YBNUDkUbCvRhDT9vDB3N, _fileUploadList:[]] in 126ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:37:44.204 [tp1887699190-59] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceReference [] in 88ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:38:04.091 [tp1887699190-59] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [serviceName:kienservice.KienServices.response#Call] in 65ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:38:06.164 [tp1887699190-55] INFO             org.moqui.impl.context.LoggerFacadeImpl []
+ Service Run Results:
+==> outValue: [outValue:24]
+
+--- 2022-10-12 00:38:06.166 [tp1887699190-55] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ Transition apps/tools/Service/ServiceRun/run in 51ms, JSON redirect to: /apps/tools/Service/ServiceRun?doingRun=Y&serviceName=kienservice.KienServices.response%23Call
+--- 2022-10-12 00:38:06.266 [tp1887699190-55] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [inValue:12, submitButton:submitButton, moquiFormName:ServiceParameters, serviceName:kienservice.KienServices.response#Call, inValue1:12, outValue:[outValue:24], doingRun:Y, moquiSessionToken:YBNUDkUbCvRhDT9vDB3N, _fileUploadList:[]] in 26ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:38:51.332 [tp1887699190-59] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceReference [] in 114ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:38:53.866 [tp1887699190-59] WARN              org.moqui.impl.entity.EntityFacadeImpl []
+ No location cache found for entity-name [Ptrinh], reloading ALL entity file and DB locations
+--- 2022-10-12 00:38:53.872 [tp1887699190-59] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found entities in 10 files in 6ms
+--- 2022-10-12 00:38:53.872 [tp1887699190-59] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found 0 view-entity definitions in database (DbViewEntity records)
+--- 2022-10-12 00:38:53.872 [tp1887699190-59] WARN              org.moqui.impl.entity.EntityFacadeImpl []
+ No definition found for entity-name [Ptrinh]
+--- 2022-10-12 00:38:53.875 [tp1887699190-59] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [serviceName:kienservice.KienServices.response#Ptrinh] in 12ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:38:58.311 [tp1887699190-57] INFO             org.moqui.impl.context.LoggerFacadeImpl []
+ Service Run Results:
+==> x: Phýõng tr?nh vô nghi?m !
+
+--- 2022-10-12 00:38:58.314 [tp1887699190-57] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ Transition apps/tools/Service/ServiceRun/run in 151ms, JSON redirect to: /apps/tools/Service/ServiceRun?doingRun=Y&serviceName=kienservice.KienServices.response%23Ptrinh
+--- 2022-10-12 00:38:58.469 [tp1887699190-57] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [a:1, b:2, submitButton:submitButton, c:3, moquiFormName:ServiceParameters, x:Phýõng tr?nh vô nghi?m !, doingRun:Y, y:0, serviceName:kienservice.KienServices.response#Ptrinh, moquiSessionToken:YBNUDkUbCvRhDT9vDB3N, _fileUploadList:[]] in 91ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:39:13.901 [tp1887699190-59] INFO             org.moqui.impl.context.LoggerFacadeImpl []
+ Service Run Results:
+==> x: -4.0
+==> x1: -4.0
+
+--- 2022-10-12 00:39:13.903 [tp1887699190-59] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ Transition apps/tools/Service/ServiceRun/run in 44ms, JSON redirect to: /apps/tools/Service/ServiceRun?doingRun=Y&serviceName=kienservice.KienServices.response%23Ptrinh
+--- 2022-10-12 00:39:14.006 [tp1887699190-57] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [submitButton:submitButton, moquiFormName:ServiceParameters, c:1, a:2, b:4, x:-4.0, doingRun:Y, x1:-4.0, y:0, serviceName:kienservice.KienServices.response#Ptrinh, moquiSessionToken:YBNUDkUbCvRhDT9vDB3N, _fileUploadList:[]] in 82ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:40:18.840 [tp1887699190-83] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ qapps/tools/Service/ServiceRun [doingRun:Y, serviceName:kienservice.KienServices.response#Ptrinh] in 80ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:40:19.076 [tp1887699190-82] INFO                org.moqui.impl.context.WebFacadeImpl []
+ Streamed 1150 bytes from location component://webroot/screen/webroot/favicon.ico
+--- 2022-10-12 00:40:19.163 [tp1887699190-50] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools [doingRun:Y, serviceName:kienservice.KienServices.response#Ptrinh] in 64ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:40:19.177 [tp1887699190-56] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service [doingRun:Y, serviceName:kienservice.KienServices.response#Ptrinh] in 1ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:40:19.218 [tp1887699190-50] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [doingRun:Y, serviceName:kienservice.KienServices.response#Ptrinh] in 10ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:40:23.291 [tp1887699190-56] INFO             org.moqui.impl.context.LoggerFacadeImpl []
+ Service Run Results:
+==> x: -4.0
+==> x1: -4.0
+
+--- 2022-10-12 00:40:23.294 [tp1887699190-56] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ Transition apps/tools/Service/ServiceRun/run in 20ms, JSON redirect to: /apps/tools/Service/ServiceRun?doingRun=Y&serviceName=kienservice.KienServices.response%23Ptrinh
+--- 2022-10-12 00:40:23.313 [tp1887699190-50] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [submitButton:submitButton, moquiFormName:ServiceParameters, c:1, a:2, b:4, x:-4.0, doingRun:Y, x1:-4.0, y:0, serviceName:kienservice.KienServices.response#Ptrinh, moquiSessionToken:YBNUDkUbCvRhDT9vDB3N, _fileUploadList:[]] in 6ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:43:37.990 [tp1887699190-95] ERROR                   org.moqui.impl.actions.XmlAction []
+ Error parsing groovy String at [kienservice.KienServices.response#Ptrinh]:
+1 : import static org.moqui.util.ObjectUtilities.*
+2 : import static org.moqui.util.CollectionUtilities.*
+3 : import static org.moqui.util.StringUtilities.*
+4 : import java.sql.Timestamp
+5 : // these are in the context by default: ExecutionContext ec, Map<String, Object> context, Map<String, Object> result
+6 : 
+7 : // begin inline script
+8 : import java.lang.Math;
+9 :                 if(a == 0 ){
+10 :                     x = -c / b
+11 :                     x1 = null
+12 :                 }else if(b == 0){
+13 :                     x = -Math.sqrt(c / a)
+14 :                     x1 = Math.sqrt(c / a)
+15 :                 }else{
+16 :                     delta = b*b - 4*a*c
+17 :                     if(delta < 0){ x ="Phýõng tr?nh vô nghi?m !"}
+18 :                     else if(delta = 0){x = -b / 2*a ;x1 = x"}
+19 :                     else{
+20 :                         x = (-b + Math.sqrt(delta)) / 2*a
+21 :                         x1 = (-b - Math.sqrt(delta)) / 2*a
+22 :                     }
+23 :                 }
+24 : // end inline script
+25 : // make sure the last statement is not considered the return value
+26 : return;
+
+
+--- 2022-10-12 00:43:37.993 [tp1887699190-95] WARN        org.moqui.impl.context.TransactionFacadeImpl []
+ Transaction rollback. The rollback was originally caused by: Error running service kienservice.KienServices.response#Ptrinh (Throwable)
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+kienservice_KienServices_response_Ptrinh: 18: Unexpected character: '"' @ line 18, column 60.
+   elta = 0){x = -b / 2*a ;x1 = x"}
+                                 ^
+
+1 error
+
+	at org.apache.groovy.parser.antlr4.AstBuilder.collectSyntaxError(AstBuilder.java:4388) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.AstBuilder.createParsingFailedException(AstBuilder.java:4371) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.AstBuilder.convertException(AstBuilder.java:261) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.AstBuilder.buildCST(AstBuilder.java:235) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.AstBuilder.buildAST(AstBuilder.java:269) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.Antlr4ParserPlugin.buildAST(Antlr4ParserPlugin.java:58) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) ~[?:?]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) ~[?:?]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658) ~[?:?]
+	at org.moqui.impl.context.ExecutionContextFactoryImpl.compileGroovy(ExecutionContextFactoryImpl.groovy:1065) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.actions.XmlAction.makeGroovyClass(XmlAction.java:101) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.actions.XmlAction.getGroovyClass(XmlAction.java:94) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.actions.XmlAction.run(XmlAction.java:61) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.runner.InlineServiceRunner.runService(InlineServiceRunner.java:59) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.callSingle(ServiceCallSyncImpl.java:322) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.call(ServiceCallSyncImpl.java:125) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions.run(component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions:9) ~[?:?]
+	at org.moqui.impl.actions.XmlAction.run(XmlAction.java:67) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenDefinition$TransitionItem.run(ScreenDefinition.groovy:987) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:749) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.internalRender(ScreenRenderImpl.groovy:454) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.render(ScreenRenderImpl.groovy:170) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.webapp.MoquiServlet.service(MoquiServlet.groovy:118) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750) ~[moqui_temp3927582242763878049WEB-INF_lib_javax.servlet-api-4.0.1.jar.:4.0.1]
+	at org.moqui.impl.webapp.ElasticRequestLogFilter.doFilter(ElasticRequestLogFilter.groovy:96) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+--- 2022-10-12 00:43:37.994 [tp1887699190-95] WARN        org.moqui.impl.context.TransactionFacadeImpl []
+ Transaction rollback for [Error running service kienservice.KienServices.response#Ptrinh (Throwable)]. Here is the current location: 
+org.moqui.BaseException: Rollback location
+	at org.moqui.impl.context.TransactionFacadeImpl.rollback(TransactionFacadeImpl.groovy:467) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.context.TransactionFacadeImpl.rollback(TransactionFacadeImpl.groovy:443) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.callSingle(ServiceCallSyncImpl.java:347) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.call(ServiceCallSyncImpl.java:125) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions.run(component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions:9) ~[?:?]
+	at org.moqui.impl.actions.XmlAction.run(XmlAction.java:67) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenDefinition$TransitionItem.run(ScreenDefinition.groovy:987) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:749) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.internalRender(ScreenRenderImpl.groovy:454) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.render(ScreenRenderImpl.groovy:170) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.webapp.MoquiServlet.service(MoquiServlet.groovy:118) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750) ~[moqui_temp3927582242763878049WEB-INF_lib_javax.servlet-api-4.0.1.jar.:4.0.1]
+	at org.moqui.impl.webapp.ElasticRequestLogFilter.doFilter(ElasticRequestLogFilter.groovy:96) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+--- 2022-10-12 00:43:37.996 [tp1887699190-95] WARN          org.moqui.impl.service.ServiceCallSyncImpl []
+ Error running service kienservice.KienServices.response#Ptrinh (Throwable) Artifact stack: kienservice.KienServices.response#Ptrinh, component://tools/screen/Tools/Service/ServiceRun.xml/run, component://tools/screen/Tools/Service/ServiceRun.xml, component://tools/screen/Tools/Service.xml, component://tools/screen/Tools.xml, component://webroot/screen/webroot/apps.xml, component://webroot/screen/webroot.xml
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+kienservice_KienServices_response_Ptrinh: 18: Unexpected character: '"' @ line 18, column 60.
+   elta = 0){x = -b / 2*a ;x1 = x"}
+                                 ^
+
+1 error
+
+	at org.apache.groovy.parser.antlr4.AstBuilder.collectSyntaxError(AstBuilder.java:4388) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.AstBuilder.createParsingFailedException(AstBuilder.java:4371) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.AstBuilder.convertException(AstBuilder.java:261) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.AstBuilder.buildCST(AstBuilder.java:235) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.AstBuilder.buildAST(AstBuilder.java:269) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.Antlr4ParserPlugin.buildAST(Antlr4ParserPlugin.java:58) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) ~[?:?]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) ~[?:?]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658) ~[?:?]
+	at org.moqui.impl.context.ExecutionContextFactoryImpl.compileGroovy(ExecutionContextFactoryImpl.groovy:1065) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.actions.XmlAction.makeGroovyClass(XmlAction.java:101) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.actions.XmlAction.getGroovyClass(XmlAction.java:94) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.actions.XmlAction.run(XmlAction.java:61) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.runner.InlineServiceRunner.runService(InlineServiceRunner.java:59) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.callSingle(ServiceCallSyncImpl.java:322) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.call(ServiceCallSyncImpl.java:125) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions.run(component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions:9) ~[?:?]
+	at org.moqui.impl.actions.XmlAction.run(XmlAction.java:67) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenDefinition$TransitionItem.run(ScreenDefinition.groovy:987) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:749) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.internalRender(ScreenRenderImpl.groovy:454) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.render(ScreenRenderImpl.groovy:170) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.webapp.MoquiServlet.service(MoquiServlet.groovy:118) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750) ~[moqui_temp3927582242763878049WEB-INF_lib_javax.servlet-api-4.0.1.jar.:4.0.1]
+	at org.moqui.impl.webapp.ElasticRequestLogFilter.doFilter(ElasticRequestLogFilter.groovy:96) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+--- 2022-10-12 00:43:37.997 [tp1887699190-95] ERROR           org.moqui.impl.context.MessageFacadeImpl []
+ startup failed:
+kienservice_KienServices_response_Ptrinh: 18: Unexpected character: '"' @ line 18, column 60.
+   elta = 0){x = -b / 2*a ;x1 = x"}
+                                 ^
+
+1 error
+
+--- 2022-10-12 00:43:38.004 [tp1887699190-95] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ Transition apps/tools/Service/ServiceRun/run in 38ms, JSON redirect to: /apps/tools/Service/ServiceRun?doingRun=Y&serviceName=kienservice.KienServices.response%23Ptrinh
+--- 2022-10-12 00:43:53.531 [tp1887699190-59] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ qapps/tools/Service/ServiceRun [submitButton:submitButton, moquiFormName:ServiceParameters, a:4, b:-2, doingRun:Y, y:0, c:-6, serviceName:kienservice.KienServices.response#Ptrinh, moquiSessionToken:YBNUDkUbCvRhDT9vDB3N, _fileUploadList:[]] in 117ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:43:53.770 [tp1887699190-56] INFO                org.moqui.impl.context.WebFacadeImpl []
+ Streamed 1150 bytes from location component://webroot/screen/webroot/favicon.ico
+--- 2022-10-12 00:43:53.960 [tp1887699190-59] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found entities in 10 files in 9ms
+--- 2022-10-12 00:43:53.961 [tp1887699190-59] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found 0 view-entity definitions in database (DbViewEntity records)
+--- 2022-10-12 00:43:53.961 [tp1887699190-59] WARN              org.moqui.impl.entity.EntityFacadeImpl []
+ No location cache found for entity-name [Ptrinh], reloading ALL entity file and DB locations
+--- 2022-10-12 00:43:53.967 [tp1887699190-59] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found entities in 10 files in 6ms
+--- 2022-10-12 00:43:53.967 [tp1887699190-59] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found 0 view-entity definitions in database (DbViewEntity records)
+--- 2022-10-12 00:43:53.967 [tp1887699190-59] WARN              org.moqui.impl.entity.EntityFacadeImpl []
+ No definition found for entity-name [Ptrinh]
+--- 2022-10-12 00:43:53.973 [tp1887699190-59] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [doingRun:Y, serviceName:kienservice.KienServices.response#Ptrinh] in 99ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:44:00.013 [tp1887699190-82] ERROR                   org.moqui.impl.actions.XmlAction []
+ Error parsing groovy String at [kienservice.KienServices.response#Ptrinh]:
+1 : import static org.moqui.util.ObjectUtilities.*
+2 : import static org.moqui.util.CollectionUtilities.*
+3 : import static org.moqui.util.StringUtilities.*
+4 : import java.sql.Timestamp
+5 : // these are in the context by default: ExecutionContext ec, Map<String, Object> context, Map<String, Object> result
+6 : 
+7 : // begin inline script
+8 : import java.lang.Math;
+9 :                 if(a == 0 ){
+10 :                     x = -c / b
+11 :                     x1 = null
+12 :                 }else if(b == 0){
+13 :                     x = -Math.sqrt(c / a)
+14 :                     x1 = Math.sqrt(c / a)
+15 :                 }else{
+16 :                     delta = b*b - 4*a*c
+17 :                     if(delta < 0){ x ="Phýõng tr?nh vô nghi?m !"}
+18 :                     else if(delta = 0){x = -b / 2*a ;x1 = x"}
+19 :                     else{
+20 :                         x = (-b + Math.sqrt(delta)) / 2*a
+21 :                         x1 = (-b - Math.sqrt(delta)) / 2*a
+22 :                     }
+23 :                 }
+24 : // end inline script
+25 : // make sure the last statement is not considered the return value
+26 : return;
+
+
+--- 2022-10-12 00:44:00.013 [tp1887699190-82] WARN        org.moqui.impl.context.TransactionFacadeImpl []
+ Transaction rollback. The rollback was originally caused by: Error running service kienservice.KienServices.response#Ptrinh (Throwable)
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+kienservice_KienServices_response_Ptrinh: 18: Unexpected character: '"' @ line 18, column 60.
+   elta = 0){x = -b / 2*a ;x1 = x"}
+                                 ^
+
+1 error
+
+	at org.apache.groovy.parser.antlr4.AstBuilder.collectSyntaxError(AstBuilder.java:4388) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.AstBuilder.createParsingFailedException(AstBuilder.java:4371) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.AstBuilder.convertException(AstBuilder.java:261) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.AstBuilder.buildCST(AstBuilder.java:235) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.AstBuilder.buildAST(AstBuilder.java:269) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.Antlr4ParserPlugin.buildAST(Antlr4ParserPlugin.java:58) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) ~[?:?]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) ~[?:?]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658) ~[?:?]
+	at org.moqui.impl.context.ExecutionContextFactoryImpl.compileGroovy(ExecutionContextFactoryImpl.groovy:1065) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.actions.XmlAction.makeGroovyClass(XmlAction.java:101) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.actions.XmlAction.getGroovyClass(XmlAction.java:94) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.actions.XmlAction.run(XmlAction.java:61) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.runner.InlineServiceRunner.runService(InlineServiceRunner.java:59) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.callSingle(ServiceCallSyncImpl.java:322) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.call(ServiceCallSyncImpl.java:125) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions.run(component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions:9) ~[?:?]
+	at org.moqui.impl.actions.XmlAction.run(XmlAction.java:67) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenDefinition$TransitionItem.run(ScreenDefinition.groovy:987) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:749) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.internalRender(ScreenRenderImpl.groovy:454) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.render(ScreenRenderImpl.groovy:170) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.webapp.MoquiServlet.service(MoquiServlet.groovy:118) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750) ~[moqui_temp3927582242763878049WEB-INF_lib_javax.servlet-api-4.0.1.jar.:4.0.1]
+	at org.moqui.impl.webapp.ElasticRequestLogFilter.doFilter(ElasticRequestLogFilter.groovy:96) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+--- 2022-10-12 00:44:00.014 [tp1887699190-82] WARN        org.moqui.impl.context.TransactionFacadeImpl []
+ Transaction rollback for [Error running service kienservice.KienServices.response#Ptrinh (Throwable)]. Here is the current location: 
+org.moqui.BaseException: Rollback location
+	at org.moqui.impl.context.TransactionFacadeImpl.rollback(TransactionFacadeImpl.groovy:467) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.context.TransactionFacadeImpl.rollback(TransactionFacadeImpl.groovy:443) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.callSingle(ServiceCallSyncImpl.java:347) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.call(ServiceCallSyncImpl.java:125) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions.run(component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions:9) ~[?:?]
+	at org.moqui.impl.actions.XmlAction.run(XmlAction.java:67) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenDefinition$TransitionItem.run(ScreenDefinition.groovy:987) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:749) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.internalRender(ScreenRenderImpl.groovy:454) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.render(ScreenRenderImpl.groovy:170) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.webapp.MoquiServlet.service(MoquiServlet.groovy:118) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750) ~[moqui_temp3927582242763878049WEB-INF_lib_javax.servlet-api-4.0.1.jar.:4.0.1]
+	at org.moqui.impl.webapp.ElasticRequestLogFilter.doFilter(ElasticRequestLogFilter.groovy:96) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+--- 2022-10-12 00:44:00.015 [tp1887699190-82] WARN          org.moqui.impl.service.ServiceCallSyncImpl []
+ Error running service kienservice.KienServices.response#Ptrinh (Throwable) Artifact stack: kienservice.KienServices.response#Ptrinh, component://tools/screen/Tools/Service/ServiceRun.xml/run, component://tools/screen/Tools/Service/ServiceRun.xml, component://tools/screen/Tools/Service.xml, component://tools/screen/Tools.xml, component://webroot/screen/webroot/apps.xml, component://webroot/screen/webroot.xml
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+kienservice_KienServices_response_Ptrinh: 18: Unexpected character: '"' @ line 18, column 60.
+   elta = 0){x = -b / 2*a ;x1 = x"}
+                                 ^
+
+1 error
+
+	at org.apache.groovy.parser.antlr4.AstBuilder.collectSyntaxError(AstBuilder.java:4388) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.AstBuilder.createParsingFailedException(AstBuilder.java:4371) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.AstBuilder.convertException(AstBuilder.java:261) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.AstBuilder.buildCST(AstBuilder.java:235) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.AstBuilder.buildAST(AstBuilder.java:269) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.Antlr4ParserPlugin.buildAST(Antlr4ParserPlugin.java:58) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) ~[?:?]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) ~[?:?]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658) ~[?:?]
+	at org.moqui.impl.context.ExecutionContextFactoryImpl.compileGroovy(ExecutionContextFactoryImpl.groovy:1065) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.actions.XmlAction.makeGroovyClass(XmlAction.java:101) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.actions.XmlAction.getGroovyClass(XmlAction.java:94) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.actions.XmlAction.run(XmlAction.java:61) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.runner.InlineServiceRunner.runService(InlineServiceRunner.java:59) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.callSingle(ServiceCallSyncImpl.java:322) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.call(ServiceCallSyncImpl.java:125) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions.run(component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions:9) ~[?:?]
+	at org.moqui.impl.actions.XmlAction.run(XmlAction.java:67) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenDefinition$TransitionItem.run(ScreenDefinition.groovy:987) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:749) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.internalRender(ScreenRenderImpl.groovy:454) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.render(ScreenRenderImpl.groovy:170) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.webapp.MoquiServlet.service(MoquiServlet.groovy:118) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750) ~[moqui_temp3927582242763878049WEB-INF_lib_javax.servlet-api-4.0.1.jar.:4.0.1]
+	at org.moqui.impl.webapp.ElasticRequestLogFilter.doFilter(ElasticRequestLogFilter.groovy:96) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+--- 2022-10-12 00:44:00.017 [tp1887699190-82] ERROR           org.moqui.impl.context.MessageFacadeImpl []
+ startup failed:
+kienservice_KienServices_response_Ptrinh: 18: Unexpected character: '"' @ line 18, column 60.
+   elta = 0){x = -b / 2*a ;x1 = x"}
+                                 ^
+
+1 error
+
+--- 2022-10-12 00:44:00.019 [tp1887699190-82] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ Transition apps/tools/Service/ServiceRun/run in 9ms, JSON redirect to: /apps/tools/Service/ServiceRun?doingRun=Y&serviceName=kienservice.KienServices.response%23Ptrinh
+--- 2022-10-12 00:44:20.678 [tp1887699190-59] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ qapps/tools/Service/ServiceRun [submitButton:submitButton, moquiFormName:ServiceParameters, a:4, b:-2, doingRun:Y, y:0, c:-6, serviceName:kienservice.KienServices.response#Ptrinh, moquiSessionToken:YBNUDkUbCvRhDT9vDB3N, _fileUploadList:[]] in 88ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:44:20.858 [tp1887699190-55] INFO                org.moqui.impl.context.WebFacadeImpl []
+ Streamed 1150 bytes from location component://webroot/screen/webroot/favicon.ico
+--- 2022-10-12 00:44:21.004 [tp1887699190-59] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [doingRun:Y, serviceName:kienservice.KienServices.response#Ptrinh] in 70ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:44:26.439 [tp1887699190-82] INFO             org.moqui.impl.context.LoggerFacadeImpl []
+ Service Run Results:
+==> x: 4.0
+==> x1: 4.0
+
+--- 2022-10-12 00:44:26.440 [tp1887699190-82] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ Transition apps/tools/Service/ServiceRun/run in 14ms, JSON redirect to: /apps/tools/Service/ServiceRun?doingRun=Y&serviceName=kienservice.KienServices.response%23Ptrinh
+--- 2022-10-12 00:44:26.511 [tp1887699190-59] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [submitButton:submitButton, moquiFormName:ServiceParameters, a:4, b:-2, x:4.0, doingRun:Y, x1:4.0, y:0, c:-6, serviceName:kienservice.KienServices.response#Ptrinh, moquiSessionToken:YBNUDkUbCvRhDT9vDB3N, _fileUploadList:[]] in 56ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:44:39.719 [tp1887699190-82] INFO             org.moqui.impl.context.LoggerFacadeImpl []
+ Service Run Results:
+==> x: Phýõng tr?nh vô nghi?m !
+
+--- 2022-10-12 00:44:39.720 [tp1887699190-82] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ Transition apps/tools/Service/ServiceRun/run in 30ms, JSON redirect to: /apps/tools/Service/ServiceRun?doingRun=Y&serviceName=kienservice.KienServices.response%23Ptrinh
+--- 2022-10-12 00:44:39.808 [tp1887699190-59] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [submitButton:submitButton, moquiFormName:ServiceParameters, a:-4, b:-2, x:Phýõng tr?nh vô nghi?m !, doingRun:Y, y:0, c:-6, serviceName:kienservice.KienServices.response#Ptrinh, moquiSessionToken:YBNUDkUbCvRhDT9vDB3N, _fileUploadList:[]] in 71ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:44:43.890 [tp1887699190-82] INFO             org.moqui.impl.context.LoggerFacadeImpl []
+ Service Run Results:
+==> x: Phýõng tr?nh vô nghi?m !
+
+--- 2022-10-12 00:44:43.893 [tp1887699190-82] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ Transition apps/tools/Service/ServiceRun/run in 4ms, JSON redirect to: /apps/tools/Service/ServiceRun?doingRun=Y&serviceName=kienservice.KienServices.response%23Ptrinh
+--- 2022-10-12 00:44:43.913 [tp1887699190-59] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [submitButton:submitButton, moquiFormName:ServiceParameters, a:-2, b:-2, x:Phýõng tr?nh vô nghi?m !, doingRun:Y, y:0, c:-6, serviceName:kienservice.KienServices.response#Ptrinh, moquiSessionToken:YBNUDkUbCvRhDT9vDB3N, _fileUploadList:[]] in 8ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:44:48.533 [tp1887699190-82] INFO             org.moqui.impl.context.LoggerFacadeImpl []
+ Service Run Results:
+==> x: 2.0
+==> x1: 2.0
+
+--- 2022-10-12 00:44:48.534 [tp1887699190-82] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ Transition apps/tools/Service/ServiceRun/run in 3ms, JSON redirect to: /apps/tools/Service/ServiceRun?doingRun=Y&serviceName=kienservice.KienServices.response%23Ptrinh
+--- 2022-10-12 00:44:48.614 [tp1887699190-59] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [submitButton:submitButton, moquiFormName:ServiceParameters, a:2, b:-2, x:2.0, doingRun:Y, x1:2.0, y:0, c:-6, serviceName:kienservice.KienServices.response#Ptrinh, moquiSessionToken:YBNUDkUbCvRhDT9vDB3N, _fileUploadList:[]] in 61ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:44:53.895 [tp1887699190-82] INFO             org.moqui.impl.context.LoggerFacadeImpl []
+ Service Run Results:
+==> x: 1.0
+==> x1: 1.0
+
+--- 2022-10-12 00:44:53.896 [tp1887699190-82] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ Transition apps/tools/Service/ServiceRun/run in 30ms, JSON redirect to: /apps/tools/Service/ServiceRun?doingRun=Y&serviceName=kienservice.KienServices.response%23Ptrinh
+--- 2022-10-12 00:44:53.961 [tp1887699190-55] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [a:1, submitButton:submitButton, moquiFormName:ServiceParameters, b:-2, x:1.0, doingRun:Y, x1:1.0, y:0, c:-6, serviceName:kienservice.KienServices.response#Ptrinh, moquiSessionToken:YBNUDkUbCvRhDT9vDB3N, _fileUploadList:[]] in 56ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:45:01.285 [oquiScheduled-2] INFO           org.moqui.impl.service.ScheduledJobRunner []
+ Running job render_ScheduledScreens_frequent run 100155 (last run 2022-10-12 00:30:01.292, schedule 2022-10-12T00:45-07:00[US/Pacific])
+--- 2022-10-12 00:45:01.287 [oquiScheduled-2] INFO           org.moqui.impl.service.ScheduledJobRunner []
+ Ran 1 Service Jobs starting 2022-10-12T00:45:01.280410-07:00[US/Pacific] (active: 4, paused: 6)
+--- 2022-10-12 00:45:30.302 [tp1887699190-55] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ qapps/tools/Service/ServiceRun [doingRun:Y, serviceName:kienservice.KienServices.response#Ptrinh] in 115ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:45:30.481 [tp1887699190-59] INFO                org.moqui.impl.context.WebFacadeImpl []
+ Streamed 1150 bytes from location component://webroot/screen/webroot/favicon.ico
+--- 2022-10-12 00:45:30.688 [tp1887699190-55] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [doingRun:Y, serviceName:kienservice.KienServices.response#Ptrinh] in 69ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:45:36.510 [tp1887699190-82] ERROR                   org.moqui.impl.actions.XmlAction []
+ Error running groovy script (groovy.lang.MissingMethodException: No signature of method: kienservice_KienServices_response_Ptrinh.sqrt() is applicable for argument types: (Integer) values: [0]
+Possible solutions: wait(), wait(long), wait(long, int), split(groovy.lang.Closure), run(), run()): 
+1 : import static org.moqui.util.ObjectUtilities.*
+2 : import static org.moqui.util.CollectionUtilities.*
+3 : import static org.moqui.util.StringUtilities.*
+4 : import java.sql.Timestamp
+5 : // these are in the context by default: ExecutionContext ec, Map<String, Object> context, Map<String, Object> result
+6 : 
+7 : // begin inline script
+8 : import java.lang.Math;
+9 :                 if(a == 0 ){
+10 :                     x = -c / b
+11 :                     x1 = null
+12 :                 }else if(b == 0){
+13 :                     x = -sqrt(c / a)
+14 :                     x1 = sqrt(c / a)
+15 :                 }else{
+16 :                     delta = b*b - 4*a*c
+17 :                     if(delta < 0){ x ="Phýõng tr?nh vô nghi?m !"}
+18 :                     else if(delta = 0){x = -b / 2*a ;x1 = x}
+19 :                     else{
+20 :                         x = (-b + sqrt(delta)) / 2*a
+21 :                         x1 = (-b - sqrt(delta)) / 2*a
+22 :                     }
+23 :                 }
+24 : // end inline script
+25 : // make sure the last statement is not considered the return value
+26 : return;
+
+
+--- 2022-10-12 00:45:36.511 [tp1887699190-82] WARN        org.moqui.impl.context.TransactionFacadeImpl []
+ Transaction rollback. The rollback was originally caused by: Error running service kienservice.KienServices.response#Ptrinh (Throwable)
+groovy.lang.MissingMethodException: No signature of method: kienservice_KienServices_response_Ptrinh.sqrt() is applicable for argument types: (Integer) values: [0]
+Possible solutions: wait(), wait(long), wait(long, int), split(groovy.lang.Closure), run(), run()
+	at kienservice_KienServices_response_Ptrinh.run(kienservice_KienServices_response_Ptrinh:20) ~[?:?]
+	at org.moqui.impl.actions.XmlAction.run(XmlAction.java:67) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.runner.InlineServiceRunner.runService(InlineServiceRunner.java:59) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.callSingle(ServiceCallSyncImpl.java:322) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.call(ServiceCallSyncImpl.java:125) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions.run(component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions:9) ~[?:?]
+	at org.moqui.impl.actions.XmlAction.run(XmlAction.java:67) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenDefinition$TransitionItem.run(ScreenDefinition.groovy:987) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:749) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.internalRender(ScreenRenderImpl.groovy:454) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.render(ScreenRenderImpl.groovy:170) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.webapp.MoquiServlet.service(MoquiServlet.groovy:118) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750) ~[moqui_temp3927582242763878049WEB-INF_lib_javax.servlet-api-4.0.1.jar.:4.0.1]
+	at org.moqui.impl.webapp.ElasticRequestLogFilter.doFilter(ElasticRequestLogFilter.groovy:96) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+--- 2022-10-12 00:45:36.516 [tp1887699190-82] WARN        org.moqui.impl.context.TransactionFacadeImpl []
+ Transaction rollback for [Error running service kienservice.KienServices.response#Ptrinh (Throwable)]. Here is the current location: 
+org.moqui.BaseException: Rollback location
+	at org.moqui.impl.context.TransactionFacadeImpl.rollback(TransactionFacadeImpl.groovy:467) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.context.TransactionFacadeImpl.rollback(TransactionFacadeImpl.groovy:443) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.callSingle(ServiceCallSyncImpl.java:347) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.call(ServiceCallSyncImpl.java:125) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions.run(component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions:9) ~[?:?]
+	at org.moqui.impl.actions.XmlAction.run(XmlAction.java:67) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenDefinition$TransitionItem.run(ScreenDefinition.groovy:987) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:749) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.internalRender(ScreenRenderImpl.groovy:454) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.render(ScreenRenderImpl.groovy:170) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.webapp.MoquiServlet.service(MoquiServlet.groovy:118) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750) ~[moqui_temp3927582242763878049WEB-INF_lib_javax.servlet-api-4.0.1.jar.:4.0.1]
+	at org.moqui.impl.webapp.ElasticRequestLogFilter.doFilter(ElasticRequestLogFilter.groovy:96) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+--- 2022-10-12 00:45:36.518 [tp1887699190-82] WARN          org.moqui.impl.service.ServiceCallSyncImpl []
+ Error running service kienservice.KienServices.response#Ptrinh (Throwable) Artifact stack: kienservice.KienServices.response#Ptrinh, component://tools/screen/Tools/Service/ServiceRun.xml/run, component://tools/screen/Tools/Service/ServiceRun.xml, component://tools/screen/Tools/Service.xml, component://tools/screen/Tools.xml, component://webroot/screen/webroot/apps.xml, component://webroot/screen/webroot.xml
+groovy.lang.MissingMethodException: No signature of method: kienservice_KienServices_response_Ptrinh.sqrt() is applicable for argument types: (Integer) values: [0]
+Possible solutions: wait(), wait(long), wait(long, int), split(groovy.lang.Closure), run(), run()
+	at kienservice_KienServices_response_Ptrinh.run(kienservice_KienServices_response_Ptrinh:20) ~[?:?]
+	at org.moqui.impl.actions.XmlAction.run(XmlAction.java:67) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.runner.InlineServiceRunner.runService(InlineServiceRunner.java:59) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.callSingle(ServiceCallSyncImpl.java:322) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.call(ServiceCallSyncImpl.java:125) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions.run(component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions:9) ~[?:?]
+	at org.moqui.impl.actions.XmlAction.run(XmlAction.java:67) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenDefinition$TransitionItem.run(ScreenDefinition.groovy:987) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:749) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.internalRender(ScreenRenderImpl.groovy:454) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.render(ScreenRenderImpl.groovy:170) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.webapp.MoquiServlet.service(MoquiServlet.groovy:118) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750) ~[moqui_temp3927582242763878049WEB-INF_lib_javax.servlet-api-4.0.1.jar.:4.0.1]
+	at org.moqui.impl.webapp.ElasticRequestLogFilter.doFilter(ElasticRequestLogFilter.groovy:96) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+--- 2022-10-12 00:45:36.521 [tp1887699190-82] ERROR           org.moqui.impl.context.MessageFacadeImpl []
+ No signature of method: kienservice_KienServices_response_Ptrinh.sqrt() is applicable for argument types: (Integer) values: [0]
+Possible solutions: wait(), wait(long), wait(long, int), split(groovy.lang.Closure), run(), run()
+--- 2022-10-12 00:45:36.522 [tp1887699190-82] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ Transition apps/tools/Service/ServiceRun/run in 40ms, JSON redirect to: /apps/tools/Service/ServiceRun?doingRun=Y&serviceName=kienservice.KienServices.response%23Ptrinh
+--- 2022-10-12 00:47:36.064 [tp1887699190-59] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ qapps/tools/Service/ServiceRun [submitButton:submitButton, moquiFormName:ServiceParameters, a:4, b:-2, doingRun:Y, y:0, c:-6, serviceName:kienservice.KienServices.response#Ptrinh, moquiSessionToken:YBNUDkUbCvRhDT9vDB3N, _fileUploadList:[]] in 76ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:47:36.250 [tp1887699190-55] INFO                org.moqui.impl.context.WebFacadeImpl []
+ Streamed 1150 bytes from location component://webroot/screen/webroot/favicon.ico
+--- 2022-10-12 00:47:36.398 [tp1887699190-56] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [doingRun:Y, serviceName:kienservice.KienServices.response#Ptrinh] in 61ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:47:43.656 [tp1887699190-57] INFO             org.moqui.impl.context.LoggerFacadeImpl []
+ Service Run Results:
+==> x: 4.0
+==> x1: 4.0
+
+--- 2022-10-12 00:47:43.657 [tp1887699190-57] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ Transition apps/tools/Service/ServiceRun/run in 38ms, JSON redirect to: /apps/tools/Service/ServiceRun?doingRun=Y&serviceName=kienservice.KienServices.response%23Ptrinh
+--- 2022-10-12 00:47:43.726 [tp1887699190-56] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [submitButton:submitButton, moquiFormName:ServiceParameters, a:4, b:-2, x:4.0, doingRun:Y, x1:4.0, y:0, c:-6, serviceName:kienservice.KienServices.response#Ptrinh, moquiSessionToken:YBNUDkUbCvRhDT9vDB3N, _fileUploadList:[]] in 57ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:49:15.441 [tp1887699190-56] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ qapps/tools/Service/ServiceRun [doingRun:Y, serviceName:kienservice.KienServices.response#Ptrinh] in 81ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:49:15.625 [tp1887699190-57] INFO                org.moqui.impl.context.WebFacadeImpl []
+ Streamed 1150 bytes from location component://webroot/screen/webroot/favicon.ico
+--- 2022-10-12 00:49:15.793 [tp1887699190-95] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found entities in 10 files in 5ms
+--- 2022-10-12 00:49:15.794 [tp1887699190-95] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found 0 view-entity definitions in database (DbViewEntity records)
+--- 2022-10-12 00:49:15.794 [tp1887699190-95] WARN              org.moqui.impl.entity.EntityFacadeImpl []
+ No location cache found for entity-name [Ptrinh], reloading ALL entity file and DB locations
+--- 2022-10-12 00:49:15.802 [tp1887699190-95] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found entities in 10 files in 8ms
+--- 2022-10-12 00:49:15.802 [tp1887699190-95] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found 0 view-entity definitions in database (DbViewEntity records)
+--- 2022-10-12 00:49:15.802 [tp1887699190-95] WARN              org.moqui.impl.entity.EntityFacadeImpl []
+ No definition found for entity-name [Ptrinh]
+--- 2022-10-12 00:49:15.805 [tp1887699190-95] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [doingRun:Y, serviceName:kienservice.KienServices.response#Ptrinh] in 99ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:49:19.236 [tp1887699190-82] ERROR                   org.moqui.impl.actions.XmlAction []
+ Error parsing groovy String at [kienservice.KienServices.response#Ptrinh]:
+1 : import static org.moqui.util.ObjectUtilities.*
+2 : import static org.moqui.util.CollectionUtilities.*
+3 : import static org.moqui.util.StringUtilities.*
+4 : import java.sql.Timestamp
+5 : // these are in the context by default: ExecutionContext ec, Map<String, Object> context, Map<String, Object> result
+6 : 
+7 : // begin inline script
+8 : import java.lang.Math;
+9 : 
+10 : 
+11 :                     delta = b*b - 4*a*c
+12 :                     if(delta < 0){ x ="Phýõng tr?nh vô nghi?m !"}
+13 :                     else if(delta = 0){x = -b / 2*a ;x1 = x}
+14 :                     else{
+15 :                         x = (-b + Math.sqrt(delta)) / 2*a
+16 :                         x1 = (-b - Math.sqrt(delta)) / 2*a
+17 : // end inline script
+18 : // make sure the last statement is not considered the return value
+19 : return;
+
+
+--- 2022-10-12 00:49:19.237 [tp1887699190-82] WARN        org.moqui.impl.context.TransactionFacadeImpl []
+ Transaction rollback. The rollback was originally caused by: Error running service kienservice.KienServices.response#Ptrinh (Throwable)
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+kienservice_KienServices_response_Ptrinh: 21: Unexpected input: '{\n                        x = (-b + Math.sqrt(delta)) / 2*a\n                        x1 = (-b - Math.sqrt(delta)) / 2*a\n// end inline script\n// make sure the last statement is not considered the return value\nreturn;\n\n' @ line 21, column 1.
+1 error
+
+	at org.apache.groovy.parser.antlr4.AstBuilder.collectSyntaxError(AstBuilder.java:4388) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.AstBuilder.access$000(AstBuilder.java:176) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.AstBuilder$1.syntaxError(AstBuilder.java:4399) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at groovyjarjarantlr4.v4.runtime.ProxyErrorListener.syntaxError(ProxyErrorListener.java:44) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at groovyjarjarantlr4.v4.runtime.Parser.notifyErrorListeners(Parser.java:543) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at groovyjarjarantlr4.v4.runtime.DefaultErrorStrategy.notifyErrorListeners(DefaultErrorStrategy.java:154) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.internal.DescriptiveErrorStrategy.reportNoViableAlternative(DescriptiveErrorStrategy.java:92) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at groovyjarjarantlr4.v4.runtime.DefaultErrorStrategy.reportError(DefaultErrorStrategy.java:139) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.GroovyParser.statement(GroovyParser.java:6931) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.GroovyParser.ifElseStatement(GroovyParser.java:6055) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.GroovyParser.conditionalStatement(GroovyParser.java:5954) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.GroovyParser.statement(GroovyParser.java:6792) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.GroovyParser.ifElseStatement(GroovyParser.java:6055) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.GroovyParser.conditionalStatement(GroovyParser.java:5954) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.GroovyParser.statement(GroovyParser.java:6792) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.GroovyParser.scriptStatement(GroovyParser.java:514) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.GroovyParser.scriptStatements(GroovyParser.java:421) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.GroovyParser.compilationUnit(GroovyParser.java:357) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.AstBuilder.buildCST(AstBuilder.java:250) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.AstBuilder.buildCST(AstBuilder.java:228) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.AstBuilder.buildAST(AstBuilder.java:269) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.Antlr4ParserPlugin.buildAST(Antlr4ParserPlugin.java:58) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) ~[?:?]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) ~[?:?]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658) ~[?:?]
+	at org.moqui.impl.context.ExecutionContextFactoryImpl.compileGroovy(ExecutionContextFactoryImpl.groovy:1065) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.actions.XmlAction.makeGroovyClass(XmlAction.java:101) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.actions.XmlAction.getGroovyClass(XmlAction.java:94) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.actions.XmlAction.run(XmlAction.java:61) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.runner.InlineServiceRunner.runService(InlineServiceRunner.java:59) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.callSingle(ServiceCallSyncImpl.java:322) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.call(ServiceCallSyncImpl.java:125) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions.run(component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions:9) ~[?:?]
+	at org.moqui.impl.actions.XmlAction.run(XmlAction.java:67) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenDefinition$TransitionItem.run(ScreenDefinition.groovy:987) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:749) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.internalRender(ScreenRenderImpl.groovy:454) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.render(ScreenRenderImpl.groovy:170) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.webapp.MoquiServlet.service(MoquiServlet.groovy:118) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750) ~[moqui_temp3927582242763878049WEB-INF_lib_javax.servlet-api-4.0.1.jar.:4.0.1]
+	at org.moqui.impl.webapp.ElasticRequestLogFilter.doFilter(ElasticRequestLogFilter.groovy:96) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+--- 2022-10-12 00:49:19.238 [tp1887699190-82] WARN        org.moqui.impl.context.TransactionFacadeImpl []
+ Transaction rollback for [Error running service kienservice.KienServices.response#Ptrinh (Throwable)]. Here is the current location: 
+org.moqui.BaseException: Rollback location
+	at org.moqui.impl.context.TransactionFacadeImpl.rollback(TransactionFacadeImpl.groovy:467) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.context.TransactionFacadeImpl.rollback(TransactionFacadeImpl.groovy:443) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.callSingle(ServiceCallSyncImpl.java:347) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.call(ServiceCallSyncImpl.java:125) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions.run(component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions:9) ~[?:?]
+	at org.moqui.impl.actions.XmlAction.run(XmlAction.java:67) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenDefinition$TransitionItem.run(ScreenDefinition.groovy:987) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:749) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.internalRender(ScreenRenderImpl.groovy:454) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.render(ScreenRenderImpl.groovy:170) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.webapp.MoquiServlet.service(MoquiServlet.groovy:118) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750) ~[moqui_temp3927582242763878049WEB-INF_lib_javax.servlet-api-4.0.1.jar.:4.0.1]
+	at org.moqui.impl.webapp.ElasticRequestLogFilter.doFilter(ElasticRequestLogFilter.groovy:96) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+--- 2022-10-12 00:49:19.239 [tp1887699190-82] WARN          org.moqui.impl.service.ServiceCallSyncImpl []
+ Error running service kienservice.KienServices.response#Ptrinh (Throwable) Artifact stack: kienservice.KienServices.response#Ptrinh, component://tools/screen/Tools/Service/ServiceRun.xml/run, component://tools/screen/Tools/Service/ServiceRun.xml, component://tools/screen/Tools/Service.xml, component://tools/screen/Tools.xml, component://webroot/screen/webroot/apps.xml, component://webroot/screen/webroot.xml
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+kienservice_KienServices_response_Ptrinh: 21: Unexpected input: '{\n                        x = (-b + Math.sqrt(delta)) / 2*a\n                        x1 = (-b - Math.sqrt(delta)) / 2*a\n// end inline script\n// make sure the last statement is not considered the return value\nreturn;\n\n' @ line 21, column 1.
+1 error
+
+	at org.apache.groovy.parser.antlr4.AstBuilder.collectSyntaxError(AstBuilder.java:4388) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.AstBuilder.access$000(AstBuilder.java:176) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.AstBuilder$1.syntaxError(AstBuilder.java:4399) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at groovyjarjarantlr4.v4.runtime.ProxyErrorListener.syntaxError(ProxyErrorListener.java:44) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at groovyjarjarantlr4.v4.runtime.Parser.notifyErrorListeners(Parser.java:543) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at groovyjarjarantlr4.v4.runtime.DefaultErrorStrategy.notifyErrorListeners(DefaultErrorStrategy.java:154) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.internal.DescriptiveErrorStrategy.reportNoViableAlternative(DescriptiveErrorStrategy.java:92) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at groovyjarjarantlr4.v4.runtime.DefaultErrorStrategy.reportError(DefaultErrorStrategy.java:139) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.GroovyParser.statement(GroovyParser.java:6931) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.GroovyParser.ifElseStatement(GroovyParser.java:6055) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.GroovyParser.conditionalStatement(GroovyParser.java:5954) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.GroovyParser.statement(GroovyParser.java:6792) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.GroovyParser.ifElseStatement(GroovyParser.java:6055) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.GroovyParser.conditionalStatement(GroovyParser.java:5954) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.GroovyParser.statement(GroovyParser.java:6792) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.GroovyParser.scriptStatement(GroovyParser.java:514) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.GroovyParser.scriptStatements(GroovyParser.java:421) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.GroovyParser.compilationUnit(GroovyParser.java:357) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.AstBuilder.buildCST(AstBuilder.java:250) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.AstBuilder.buildCST(AstBuilder.java:228) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.AstBuilder.buildAST(AstBuilder.java:269) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at org.apache.groovy.parser.antlr4.Antlr4ParserPlugin.buildAST(Antlr4ParserPlugin.java:58) ~[moqui_temp9186077044543923972WEB-INF_lib_groovy-3.0.9.jar.:3.0.9]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) ~[?:?]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) ~[?:?]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658) ~[?:?]
+	at org.moqui.impl.context.ExecutionContextFactoryImpl.compileGroovy(ExecutionContextFactoryImpl.groovy:1065) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.actions.XmlAction.makeGroovyClass(XmlAction.java:101) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.actions.XmlAction.getGroovyClass(XmlAction.java:94) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.actions.XmlAction.run(XmlAction.java:61) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.runner.InlineServiceRunner.runService(InlineServiceRunner.java:59) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.callSingle(ServiceCallSyncImpl.java:322) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.call(ServiceCallSyncImpl.java:125) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions.run(component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions:9) ~[?:?]
+	at org.moqui.impl.actions.XmlAction.run(XmlAction.java:67) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenDefinition$TransitionItem.run(ScreenDefinition.groovy:987) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:749) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.internalRender(ScreenRenderImpl.groovy:454) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.render(ScreenRenderImpl.groovy:170) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.webapp.MoquiServlet.service(MoquiServlet.groovy:118) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750) ~[moqui_temp3927582242763878049WEB-INF_lib_javax.servlet-api-4.0.1.jar.:4.0.1]
+	at org.moqui.impl.webapp.ElasticRequestLogFilter.doFilter(ElasticRequestLogFilter.groovy:96) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+--- 2022-10-12 00:49:19.240 [tp1887699190-82] ERROR           org.moqui.impl.context.MessageFacadeImpl []
+ startup failed:
+kienservice_KienServices_response_Ptrinh: 21: Unexpected input: '{\n                        x = (-b + Math.sqrt(delta)) / 2*a\n                        x1 = (-b - Math.sqrt(delta)) / 2*a\n// end inline script\n// make sure the last statement is not considered the return value\nreturn;\n\n' @ line 21, column 1.
+1 error
+
+--- 2022-10-12 00:49:19.241 [tp1887699190-82] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ Transition apps/tools/Service/ServiceRun/run in 21ms, JSON redirect to: /apps/tools/Service/ServiceRun?doingRun=Y&serviceName=kienservice.KienServices.response%23Ptrinh
+--- 2022-10-12 00:49:50.239 [tp1887699190-55] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ qapps/tools/Service/ServiceRun [submitButton:submitButton, moquiFormName:ServiceParameters, a:4, b:-2, doingRun:Y, y:0, c:-6, serviceName:kienservice.KienServices.response#Ptrinh, moquiSessionToken:YBNUDkUbCvRhDT9vDB3N, _fileUploadList:[]] in 76ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:49:50.429 [tp1887699190-57] INFO                org.moqui.impl.context.WebFacadeImpl []
+ Streamed 1150 bytes from location component://webroot/screen/webroot/favicon.ico
+--- 2022-10-12 00:49:50.611 [tp1887699190-55] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [doingRun:Y, serviceName:kienservice.KienServices.response#Ptrinh] in 98ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:49:57.602 [tp1887699190-95] INFO             org.moqui.impl.context.LoggerFacadeImpl []
+ Service Run Results:
+==> x: 4.0
+==> x1: 4.0
+
+--- 2022-10-12 00:49:57.604 [tp1887699190-95] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ Transition apps/tools/Service/ServiceRun/run in 17ms, JSON redirect to: /apps/tools/Service/ServiceRun?doingRun=Y&serviceName=kienservice.KienServices.response%23Ptrinh
+--- 2022-10-12 00:49:57.692 [tp1887699190-55] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [submitButton:submitButton, moquiFormName:ServiceParameters, a:4, b:-2, x:4.0, doingRun:Y, x1:4.0, y:0, c:-6, serviceName:kienservice.KienServices.response#Ptrinh, moquiSessionToken:YBNUDkUbCvRhDT9vDB3N, _fileUploadList:[]] in 74ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:51:33.099 [p1887699190-118] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ qapps/tools/Service/ServiceRun [doingRun:Y, serviceName:kienservice.KienServices.response#Ptrinh] in 81ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:51:33.300 [tp1887699190-95] INFO                org.moqui.impl.context.WebFacadeImpl []
+ Streamed 1150 bytes from location component://webroot/screen/webroot/favicon.ico
+--- 2022-10-12 00:51:33.500 [tp1887699190-82] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [doingRun:Y, serviceName:kienservice.KienServices.response#Ptrinh] in 98ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:51:38.684 [tp1887699190-59] INFO             org.moqui.impl.context.LoggerFacadeImpl []
+ Service Run Results:
+==> x: 24.0
+==> x1: -16.0
+
+--- 2022-10-12 00:51:38.685 [tp1887699190-59] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ Transition apps/tools/Service/ServiceRun/run in 12ms, JSON redirect to: /apps/tools/Service/ServiceRun?doingRun=Y&serviceName=kienservice.KienServices.response%23Ptrinh
+--- 2022-10-12 00:51:38.752 [tp1887699190-82] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [submitButton:submitButton, x:24.0, moquiFormName:ServiceParameters, a:4, b:-2, doingRun:Y, x1:-16.0, y:0, c:-6, serviceName:kienservice.KienServices.response#Ptrinh, moquiSessionToken:YBNUDkUbCvRhDT9vDB3N, _fileUploadList:[]] in 56ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:56:04.692 [p1887699190-128] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ qapps/tools/Service/ServiceRun [doingRun:Y, serviceName:kienservice.KienServices.response#Ptrinh] in 72ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:56:04.940 [tp1887699190-59] INFO                org.moqui.impl.context.WebFacadeImpl []
+ Streamed 1150 bytes from location component://webroot/screen/webroot/favicon.ico
+--- 2022-10-12 00:56:05.099 [p1887699190-114] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found entities in 10 files in 8ms
+--- 2022-10-12 00:56:05.099 [p1887699190-114] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found 0 view-entity definitions in database (DbViewEntity records)
+--- 2022-10-12 00:56:05.100 [p1887699190-114] WARN              org.moqui.impl.entity.EntityFacadeImpl []
+ No location cache found for entity-name [Ptrinh], reloading ALL entity file and DB locations
+--- 2022-10-12 00:56:05.105 [p1887699190-114] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found entities in 10 files in 5ms
+--- 2022-10-12 00:56:05.105 [p1887699190-114] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found 0 view-entity definitions in database (DbViewEntity records)
+--- 2022-10-12 00:56:05.105 [p1887699190-114] WARN              org.moqui.impl.entity.EntityFacadeImpl []
+ No definition found for entity-name [Ptrinh]
+--- 2022-10-12 00:56:05.108 [p1887699190-114] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [doingRun:Y, serviceName:kienservice.KienServices.response#Ptrinh] in 80ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:56:23.781 [tp1887699190-55] INFO             org.moqui.impl.context.LoggerFacadeImpl []
+ Service Run Results:
+==> x: 12.0
+==> x1: 2.0
+
+--- 2022-10-12 00:56:23.783 [tp1887699190-55] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ Transition apps/tools/Service/ServiceRun/run in 34ms, JSON redirect to: /apps/tools/Service/ServiceRun?doingRun=Y&serviceName=kienservice.KienServices.response%23Ptrinh
+--- 2022-10-12 00:56:23.886 [p1887699190-114] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [submitButton:submitButton, c:3, x:12.0, moquiFormName:ServiceParameters, a:2, b:-7, doingRun:Y, x1:2.0, y:0, serviceName:kienservice.KienServices.response#Ptrinh, moquiSessionToken:YBNUDkUbCvRhDT9vDB3N, _fileUploadList:[]] in 84ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:57:43.599 [p1887699190-114] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ qapps/tools/Service/ServiceRun [doingRun:Y, serviceName:kienservice.KienServices.response#Ptrinh] in 75ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:57:43.822 [tp1887699190-55] INFO                org.moqui.impl.context.WebFacadeImpl []
+ Streamed 1150 bytes from location component://webroot/screen/webroot/favicon.ico
+--- 2022-10-12 00:57:43.999 [tp1887699190-56] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [doingRun:Y, serviceName:kienservice.KienServices.response#Ptrinh] in 84ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:57:50.050 [tp1887699190-82] INFO             org.moqui.impl.context.LoggerFacadeImpl []
+ Service Run Results:
+==> x: -1.5440037453175304
+==> x1: 15.54400374531753
+
+--- 2022-10-12 00:57:50.051 [tp1887699190-82] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ Transition apps/tools/Service/ServiceRun/run in 16ms, JSON redirect to: /apps/tools/Service/ServiceRun?doingRun=Y&serviceName=kienservice.KienServices.response%23Ptrinh
+--- 2022-10-12 00:57:50.123 [tp1887699190-56] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [submitButton:submitButton, c:3, moquiFormName:ServiceParameters, a:-2, b:7, x:-1.5440037453175304, doingRun:Y, y:0, serviceName:kienservice.KienServices.response#Ptrinh, x1:15.54400374531753, moquiSessionToken:YBNUDkUbCvRhDT9vDB3N, _fileUploadList:[]] in 56ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:58:08.191 [tp1887699190-82] INFO             org.moqui.impl.context.LoggerFacadeImpl []
+ Service Run Results:
+==> x: 12.0
+==> x1: 2.0
+
+--- 2022-10-12 00:58:08.192 [tp1887699190-82] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ Transition apps/tools/Service/ServiceRun/run in 30ms, JSON redirect to: /apps/tools/Service/ServiceRun?doingRun=Y&serviceName=kienservice.KienServices.response%23Ptrinh
+--- 2022-10-12 00:58:08.262 [tp1887699190-56] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [submitButton:submitButton, c:3, x:12.0, moquiFormName:ServiceParameters, a:2, b:-7, doingRun:Y, x1:2.0, y:0, serviceName:kienservice.KienServices.response#Ptrinh, moquiSessionToken:YBNUDkUbCvRhDT9vDB3N, _fileUploadList:[]] in 54ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:58:51.148 [tp1887699190-59] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ qapps/tools/Service/ServiceRun [doingRun:Y, serviceName:kienservice.KienServices.response#Ptrinh] in 84ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:58:51.315 [tp1887699190-56] INFO                org.moqui.impl.context.WebFacadeImpl []
+ Streamed 1150 bytes from location component://webroot/screen/webroot/favicon.ico
+--- 2022-10-12 00:58:51.520 [tp1887699190-59] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [doingRun:Y, serviceName:kienservice.KienServices.response#Ptrinh] in 113ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:58:59.411 [tp1887699190-55] INFO             org.moqui.impl.context.LoggerFacadeImpl []
+ Service Run Results:
+==> x: 12.0
+==> x1: 2.0 'delta'
+
+--- 2022-10-12 00:58:59.413 [tp1887699190-55] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ Transition apps/tools/Service/ServiceRun/run in 27ms, JSON redirect to: /apps/tools/Service/ServiceRun?doingRun=Y&serviceName=kienservice.KienServices.response%23Ptrinh
+--- 2022-10-12 00:58:59.581 [tp1887699190-55] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [submitButton:submitButton, c:3, x:12.0, moquiFormName:ServiceParameters, x1:2.0 'delta', a:2, b:-7, doingRun:Y, y:0, serviceName:kienservice.KienServices.response#Ptrinh, moquiSessionToken:YBNUDkUbCvRhDT9vDB3N, _fileUploadList:[]] in 72ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:59:18.380 [tp1887699190-82] INFO             org.moqui.impl.context.LoggerFacadeImpl []
+ Service Run Results:
+==> x: 12.0
+==> x1: 25.0
+
+--- 2022-10-12 00:59:18.384 [tp1887699190-82] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ Transition apps/tools/Service/ServiceRun/run in 55ms, JSON redirect to: /apps/tools/Service/ServiceRun?doingRun=Y&serviceName=kienservice.KienServices.response%23Ptrinh
+--- 2022-10-12 00:59:18.489 [tp1887699190-55] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [submitButton:submitButton, c:3, x:12.0, x1:25.0, moquiFormName:ServiceParameters, a:2, b:-7, doingRun:Y, y:0, serviceName:kienservice.KienServices.response#Ptrinh, moquiSessionToken:YBNUDkUbCvRhDT9vDB3N, _fileUploadList:[]] in 91ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:59:35.101 [tp1887699190-82] INFO             org.moqui.impl.context.LoggerFacadeImpl []
+ Service Run Results:
+==> x: 12.0
+==> x1: 5.0
+
+--- 2022-10-12 00:59:35.102 [tp1887699190-82] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ Transition apps/tools/Service/ServiceRun/run in 99ms, JSON redirect to: /apps/tools/Service/ServiceRun?doingRun=Y&serviceName=kienservice.KienServices.response%23Ptrinh
+--- 2022-10-12 00:59:35.172 [tp1887699190-55] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [submitButton:submitButton, c:3, x:12.0, moquiFormName:ServiceParameters, a:2, b:-7, doingRun:Y, y:0, serviceName:kienservice.KienServices.response#Ptrinh, x1:5.0, moquiSessionToken:YBNUDkUbCvRhDT9vDB3N, _fileUploadList:[]] in 58ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 00:59:54.410 [tp1887699190-82] INFO             org.moqui.impl.context.LoggerFacadeImpl []
+ Service Run Results:
+==> x: 12.0
+==> x1: 2.0
+
+--- 2022-10-12 00:59:54.411 [tp1887699190-82] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ Transition apps/tools/Service/ServiceRun/run in 43ms, JSON redirect to: /apps/tools/Service/ServiceRun?doingRun=Y&serviceName=kienservice.KienServices.response%23Ptrinh
+--- 2022-10-12 00:59:54.493 [tp1887699190-55] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [submitButton:submitButton, c:3, x:12.0, moquiFormName:ServiceParameters, a:2, b:-7, doingRun:Y, x1:2.0, y:0, serviceName:kienservice.KienServices.response#Ptrinh, moquiSessionToken:YBNUDkUbCvRhDT9vDB3N, _fileUploadList:[]] in 69ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 01:00:01.284 [oquiScheduled-1] INFO           org.moqui.impl.service.ScheduledJobRunner []
+ Running job render_ScheduledScreens_frequent run 100156 (last run 2022-10-12 00:45:01.28, schedule 2022-10-12T01:00-07:00[US/Pacific])
+--- 2022-10-12 01:00:01.285 [oquiScheduled-1] INFO           org.moqui.impl.service.ScheduledJobRunner []
+ Ran 1 Service Jobs starting 2022-10-12T01:00:01.280451400-07:00[US/Pacific] (active: 4, paused: 6)
+--- 2022-10-12 01:00:21.106 [p1887699190-129] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ qapps/tools/Service/ServiceRun [doingRun:Y, serviceName:kienservice.KienServices.response#Ptrinh] in 80ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 01:00:21.294 [tp1887699190-59] INFO                org.moqui.impl.context.WebFacadeImpl []
+ Streamed 1150 bytes from location component://webroot/screen/webroot/favicon.ico
+--- 2022-10-12 01:00:21.465 [p1887699190-129] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [doingRun:Y, serviceName:kienservice.KienServices.response#Ptrinh] in 83ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 01:00:26.572 [tp1887699190-55] INFO             org.moqui.impl.context.LoggerFacadeImpl []
+ Service Run Results:
+==> x: 12.0
+==> x1: 2.0
+
+--- 2022-10-12 01:00:26.573 [tp1887699190-55] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ Transition apps/tools/Service/ServiceRun/run in 19ms, JSON redirect to: /apps/tools/Service/ServiceRun?doingRun=Y&serviceName=kienservice.KienServices.response%23Ptrinh
+--- 2022-10-12 01:00:26.644 [p1887699190-129] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [submitButton:submitButton, c:3, x:12.0, moquiFormName:ServiceParameters, a:2, b:-7, doingRun:Y, x1:2.0, y:0, serviceName:kienservice.KienServices.response#Ptrinh, moquiSessionToken:YBNUDkUbCvRhDT9vDB3N, _fileUploadList:[]] in 59ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 01:01:08.959 [p1887699190-136] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found entities in 10 files in 7ms
+--- 2022-10-12 01:01:08.960 [p1887699190-136] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found 0 view-entity definitions in database (DbViewEntity records)
+--- 2022-10-12 01:01:08.982 [p1887699190-136] INFO             org.moqui.impl.context.LoggerFacadeImpl []
+ Service Run Results:
+==> x: 12.0
+==> x1: 3
+
+--- 2022-10-12 01:01:08.988 [p1887699190-136] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ Transition apps/tools/Service/ServiceRun/run in 51ms, JSON redirect to: /apps/tools/Service/ServiceRun?doingRun=Y&serviceName=kienservice.KienServices.response%23Ptrinh
+--- 2022-10-12 01:01:09.113 [p1887699190-128] WARN              org.moqui.impl.entity.EntityFacadeImpl []
+ No location cache found for entity-name [Ptrinh], reloading ALL entity file and DB locations
+--- 2022-10-12 01:01:09.120 [p1887699190-128] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found entities in 10 files in 7ms
+--- 2022-10-12 01:01:09.121 [p1887699190-128] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found 0 view-entity definitions in database (DbViewEntity records)
+--- 2022-10-12 01:01:09.121 [p1887699190-128] WARN              org.moqui.impl.entity.EntityFacadeImpl []
+ No definition found for entity-name [Ptrinh]
+--- 2022-10-12 01:01:09.127 [p1887699190-128] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [submitButton:submitButton, c:3, x:12.0, moquiFormName:ServiceParameters, a:2, x1:3, b:-7, doingRun:Y, y:0, serviceName:kienservice.KienServices.response#Ptrinh, moquiSessionToken:YBNUDkUbCvRhDT9vDB3N, _fileUploadList:[]] in 108ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 01:01:17.357 [p1887699190-136] INFO             org.moqui.impl.context.LoggerFacadeImpl []
+ Service Run Results:
+==> x: 12.0
+==> x1: 3
+
+--- 2022-10-12 01:01:17.358 [p1887699190-136] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ Transition apps/tools/Service/ServiceRun/run in 3ms, JSON redirect to: /apps/tools/Service/ServiceRun?doingRun=Y&serviceName=kienservice.KienServices.response%23Ptrinh
+--- 2022-10-12 01:01:17.432 [p1887699190-128] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [submitButton:submitButton, c:3, x:12.0, moquiFormName:ServiceParameters, a:2, x1:3, b:-7, doingRun:Y, y:0, serviceName:kienservice.KienServices.response#Ptrinh, moquiSessionToken:YBNUDkUbCvRhDT9vDB3N, _fileUploadList:[]] in 58ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 01:01:21.068 [p1887699190-136] INFO             org.moqui.impl.context.LoggerFacadeImpl []
+ Service Run Results:
+==> x: 12.0
+==> x1: 2.0
+
+--- 2022-10-12 01:01:21.070 [p1887699190-136] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ Transition apps/tools/Service/ServiceRun/run in 29ms, JSON redirect to: /apps/tools/Service/ServiceRun?doingRun=Y&serviceName=kienservice.KienServices.response%23Ptrinh
+--- 2022-10-12 01:01:21.093 [p1887699190-128] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [submitButton:submitButton, c:3, x:12.0, moquiFormName:ServiceParameters, a:2, b:-7, doingRun:Y, x1:2.0, y:0, serviceName:kienservice.KienServices.response#Ptrinh, moquiSessionToken:YBNUDkUbCvRhDT9vDB3N, _fileUploadList:[]] in 9ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 01:01:42.411 [p1887699190-136] INFO             org.moqui.impl.context.LoggerFacadeImpl []
+ Service Run Results:
+==> x: 12.0
+==> x1: 6.0
+
+--- 2022-10-12 01:01:42.412 [p1887699190-136] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ Transition apps/tools/Service/ServiceRun/run in 26ms, JSON redirect to: /apps/tools/Service/ServiceRun?doingRun=Y&serviceName=kienservice.KienServices.response%23Ptrinh
+--- 2022-10-12 01:01:42.490 [tp1887699190-55] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [submitButton:submitButton, c:3, x:12.0, x1:6.0, moquiFormName:ServiceParameters, a:2, b:-7, doingRun:Y, y:0, serviceName:kienservice.KienServices.response#Ptrinh, moquiSessionToken:YBNUDkUbCvRhDT9vDB3N, _fileUploadList:[]] in 61ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 01:01:59.673 [p1887699190-136] INFO             org.moqui.impl.context.LoggerFacadeImpl []
+ Service Run Results:
+==> x: 12.0
+==> x1: 2.0
+
+--- 2022-10-12 01:01:59.674 [p1887699190-136] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ Transition apps/tools/Service/ServiceRun/run in 49ms, JSON redirect to: /apps/tools/Service/ServiceRun?doingRun=Y&serviceName=kienservice.KienServices.response%23Ptrinh
+--- 2022-10-12 01:01:59.757 [tp1887699190-55] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [submitButton:submitButton, c:3, x:12.0, moquiFormName:ServiceParameters, a:2, b:-7, doingRun:Y, x1:2.0, y:0, serviceName:kienservice.KienServices.response#Ptrinh, moquiSessionToken:YBNUDkUbCvRhDT9vDB3N, _fileUploadList:[]] in 67ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 01:02:11.730 [p1887699190-136] INFO             org.moqui.impl.context.LoggerFacadeImpl []
+ Service Run Results:
+==> x: 12.0
+==> x1: 4.0
+
+--- 2022-10-12 01:02:11.731 [p1887699190-136] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ Transition apps/tools/Service/ServiceRun/run in 25ms, JSON redirect to: /apps/tools/Service/ServiceRun?doingRun=Y&serviceName=kienservice.KienServices.response%23Ptrinh
+--- 2022-10-12 01:02:11.808 [tp1887699190-55] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [submitButton:submitButton, c:3, x:12.0, moquiFormName:ServiceParameters, a:2, b:-7, doingRun:Y, x1:4.0, y:0, serviceName:kienservice.KienServices.response#Ptrinh, moquiSessionToken:YBNUDkUbCvRhDT9vDB3N, _fileUploadList:[]] in 65ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 01:02:38.369 [p1887699190-136] INFO             org.moqui.impl.context.LoggerFacadeImpl []
+ Service Run Results:
+==> x: 3.0
+==> x1: 0.5
+
+--- 2022-10-12 01:02:38.371 [p1887699190-136] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ Transition apps/tools/Service/ServiceRun/run in 33ms, JSON redirect to: /apps/tools/Service/ServiceRun?doingRun=Y&serviceName=kienservice.KienServices.response%23Ptrinh
+--- 2022-10-12 01:02:38.489 [tp1887699190-55] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [submitButton:submitButton, c:3, x:3.0, moquiFormName:ServiceParameters, a:2, b:-7, doingRun:Y, x1:0.5, y:0, serviceName:kienservice.KienServices.response#Ptrinh, moquiSessionToken:YBNUDkUbCvRhDT9vDB3N, _fileUploadList:[]] in 99ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 01:15:01.295 [oquiScheduled-2] INFO           org.moqui.impl.service.ScheduledJobRunner []
+ Running job render_ScheduledScreens_frequent run 100157 (last run 2022-10-12 01:00:01.28, schedule 2022-10-12T01:15-07:00[US/Pacific])
+--- 2022-10-12 01:15:01.303 [oquiScheduled-2] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found entities in 10 files in 5ms
+--- 2022-10-12 01:15:01.303 [oquiScheduled-2] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found 0 view-entity definitions in database (DbViewEntity records)
+--- 2022-10-12 01:15:01.304 [oquiScheduled-2] INFO           org.moqui.impl.service.ScheduledJobRunner []
+ Ran 1 Service Jobs starting 2022-10-12T01:15:01.290366-07:00[US/Pacific] (active: 4, paused: 6)
+--- 2022-10-12 01:30:01.298 [oquiScheduled-2] INFO           org.moqui.impl.service.ScheduledJobRunner []
+ Running job render_ScheduledScreens_frequent run 100158 (last run 2022-10-12 01:15:01.29, schedule 2022-10-12T01:30-07:00[US/Pacific])
+--- 2022-10-12 01:30:01.305 [oquiScheduled-2] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found entities in 10 files in 4ms
+--- 2022-10-12 01:30:01.306 [oquiScheduled-2] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found 0 view-entity definitions in database (DbViewEntity records)
+--- 2022-10-12 01:30:01.307 [oquiScheduled-2] INFO           org.moqui.impl.service.ScheduledJobRunner []
+ Ran 1 Service Jobs starting 2022-10-12T01:30:01.293031800-07:00[US/Pacific] (active: 4, paused: 6)
+--- 2022-10-12 01:45:01.428 [oquiScheduled-2] INFO           org.moqui.impl.service.ScheduledJobRunner []
+ Running job render_ScheduledScreens_frequent run 100159 (last run 2022-10-12 01:30:01.293, schedule 2022-10-12T01:45-07:00[US/Pacific])
+--- 2022-10-12 01:45:01.883 [oquiScheduled-2] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found entities in 10 files in 452ms
+--- 2022-10-12 01:45:01.929 [oquiScheduled-2] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found 0 view-entity definitions in database (DbViewEntity records)
+--- 2022-10-12 01:45:01.930 [oquiScheduled-2] INFO           org.moqui.impl.service.ScheduledJobRunner []
+ Ran 1 Service Jobs starting 2022-10-12T01:45:01.284919600-07:00[US/Pacific] (active: 4, paused: 6)
+--- 2022-10-12 02:00:01.306 [oquiScheduled-1] INFO           org.moqui.impl.service.ScheduledJobRunner []
+ Running job clean_ArtifactData_daily run 100160 (last run 2022-10-11 02:55:38.113, schedule 2022-10-12T02:00-07:00[US/Pacific])
+--- 2022-10-12 02:00:01.636 [oquiScheduled-1] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found entities in 10 files in 4ms
+--- 2022-10-12 02:00:01.636 [oquiScheduled-1] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found 0 view-entity definitions in database (DbViewEntity records)
+--- 2022-10-12 02:00:01.660 [oquiScheduled-1] INFO           org.moqui.impl.service.ScheduledJobRunner []
+ Running job clean_PrintJobData_daily run 100161 (last run 2022-10-11 02:55:38.113, schedule 2022-10-12T02:00-07:00[US/Pacific])
+--- 2022-10-12 02:00:01.663 [oquiScheduled-1] INFO           org.moqui.impl.service.ScheduledJobRunner []
+ Running job clean_ServiceJobRun_daily run 100162 (last run 2022-10-11 02:55:38.113, schedule 2022-10-12T02:00-07:00[US/Pacific])
+--- 2022-10-12 02:00:01.665 [oquiScheduled-1] INFO           org.moqui.impl.service.ScheduledJobRunner []
+ Running job render_ScheduledScreens_frequent run 100163 (last run 2022-10-12 01:45:01.284, schedule 2022-10-12T02:00-07:00[US/Pacific])
+--- 2022-10-12 02:00:01.666 [oquiScheduled-1] INFO           org.moqui.impl.service.ScheduledJobRunner []
+ Ran 4 Service Jobs starting 2022-10-12T02:00:01.280715200-07:00[US/Pacific] (active: 4, paused: 6)
+--- 2022-10-12 02:00:02.613 [  MoquiWorker-8] INFO             org.moqui.impl.context.LoggerFacadeImpl []
+ Removed 0 ServiceJobRun records.
+--- 2022-10-12 02:00:02.613 [ MoquiWorker-13] INFO             org.moqui.impl.context.LoggerFacadeImpl []
+ Removed 0 PrintJob records more than 7 days old
+--- 2022-10-12 02:00:02.855 [ MoquiWorker-12] INFO             org.moqui.impl.context.LoggerFacadeImpl []
+ Removed 0 ArtifactHit records and 0 ArtifactHitBin records more than 90 days old
+--- 2022-10-12 02:00:21.528 [uler-1a7288a3-1] INFO         org.moqui.impl.webapp.MoquiAbstractEndpoint []
+ Timeout in WebSocket Session 19b5a379-93ff-45fe-ba78-7bfbff538562, User EX_JOHN_DOE (john.doe): Connection Idle Timeout
+--- 2022-10-12 02:15:01.293 [oquiScheduled-1] INFO           org.moqui.impl.service.ScheduledJobRunner []
+ Running job render_ScheduledScreens_frequent run 100164 (last run 2022-10-12 02:00:01.28, schedule 2022-10-12T02:15-07:00[US/Pacific])
+--- 2022-10-12 02:15:01.329 [oquiScheduled-1] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found entities in 10 files in 34ms
+--- 2022-10-12 02:15:01.330 [oquiScheduled-1] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found 0 view-entity definitions in database (DbViewEntity records)
+--- 2022-10-12 02:15:01.330 [oquiScheduled-1] INFO           org.moqui.impl.service.ScheduledJobRunner []
+ Ran 1 Service Jobs starting 2022-10-12T02:15:01.290397800-07:00[US/Pacific] (active: 4, paused: 6)
+--- 2022-10-12 02:30:01.379 [oquiScheduled-1] INFO           org.moqui.impl.service.ScheduledJobRunner []
+ Running job render_ScheduledScreens_frequent run 100165 (last run 2022-10-12 02:15:01.29, schedule 2022-10-12T02:30-07:00[US/Pacific])
+--- 2022-10-12 02:30:01.409 [oquiScheduled-1] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found entities in 10 files in 21ms
+--- 2022-10-12 02:30:01.410 [oquiScheduled-1] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found 0 view-entity definitions in database (DbViewEntity records)
+--- 2022-10-12 02:30:01.410 [oquiScheduled-1] INFO           org.moqui.impl.service.ScheduledJobRunner []
+ Ran 1 Service Jobs starting 2022-10-12T02:30:01.285143100-07:00[US/Pacific] (active: 4, paused: 6)
+--- 2022-10-12 02:39:39.837 [p1887699190-244] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceReference [] in 603ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 02:39:41.404 [tp1887699190-56] WARN              org.moqui.impl.context.ContextJavaUtil []
+ Slow hit to AT_XML_SCREEN:text/html:component://webroot/screen/webroot.xml running time 1298.9838 is greater than average 87.14871388888886 plus 2.6 standard deviations 88.62820148443724
+--- 2022-10-12 02:39:41.404 [tp1887699190-56] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ qapps/tools/Service/ServiceReference [] in 1316ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 02:39:43.558 [tp1887699190-59] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools [] in 1ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 02:39:44.044 [p1887699190-244] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service [] in 3ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 02:39:44.135 [tp1887699190-56] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceReference [] in 38ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 02:39:44.206 [p1887699190-245] INFO                org.moqui.impl.context.WebFacadeImpl []
+ Streamed 1150 bytes from location component://webroot/screen/webroot/favicon.ico
+--- 2022-10-12 02:40:16.781 [tp1887699190-56] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ qapps/tools/Service/ServiceReference [] in 370ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 02:40:16.980 [p1887699190-244] INFO                org.moqui.impl.context.WebFacadeImpl []
+ Streamed 1150 bytes from location component://webroot/screen/webroot/favicon.ico
+--- 2022-10-12 02:40:17.361 [tp1887699190-56] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceReference [] in 267ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 02:40:20.071 [p1887699190-136] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found entities in 10 files in 7ms
+--- 2022-10-12 02:40:20.072 [p1887699190-136] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found 0 view-entity definitions in database (DbViewEntity records)
+--- 2022-10-12 02:40:20.087 [p1887699190-136] WARN              org.moqui.impl.entity.EntityFacadeImpl []
+ No location cache found for entity-name [CallAPI], reloading ALL entity file and DB locations
+--- 2022-10-12 02:40:20.094 [p1887699190-136] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found entities in 10 files in 7ms
+--- 2022-10-12 02:40:20.094 [p1887699190-136] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found 0 view-entity definitions in database (DbViewEntity records)
+--- 2022-10-12 02:40:20.095 [p1887699190-136] WARN              org.moqui.impl.entity.EntityFacadeImpl []
+ No definition found for entity-name [CallAPI]
+--- 2022-10-12 02:40:20.097 [p1887699190-136] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [serviceName:kienservice.KienServices.response#CallAPI] in 38ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 02:40:21.594 [tp1887699190-56] ERROR                   org.moqui.impl.actions.XmlAction []
+ Error parsing groovy String at [kienservice.KienServices.response#CallAPI]:
+1 : import static org.moqui.util.ObjectUtilities.*
+2 : import static org.moqui.util.CollectionUtilities.*
+3 : import static org.moqui.util.StringUtilities.*
+4 : import java.sql.Timestamp
+5 : // these are in the context by default: ExecutionContext ec, Map<String, Object> context, Map<String, Object> result
+6 : 
+7 : // begin inline script
+8 : try{
+9 :                 URL url = new URL("https://api.openweathermap.org/data/2.5/weather?q=Hanoi&appid=e9d1dc7ee1f7119af1604fe8004b5a71");
+10 :                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+11 :                 conn.setRequestMethod("GET");
+12 :                 conn.connect();
+13 :                 int resspon = conn.getResponseCode();
+14 :                 if(resspon != 200){
+15 :                 throw new RuntimeErrorException(null, "Loi vcl" + resspon);
+16 :                 }else{
+17 : 
+18 :                 StringBuilder inforString = new StringBuilder();
+19 :                 Scanner scan = new Scanner(url.openStream());
+20 :                 while(scan.hasNext()){
+21 :                     inforString.append(scan.nextLine());
+22 :                     }
+23 :                     scan.close();
+24 :                     outValue = inforString
+25 :                 }
+26 :             }catch(Exception e){
+27 :             }
+28 : // end inline script
+29 : // make sure the last statement is not considered the return value
+30 : return;
+
+
+--- 2022-10-12 02:40:21.594 [tp1887699190-56] WARN        org.moqui.impl.context.TransactionFacadeImpl []
+ Transaction rollback. The rollback was originally caused by: Error running service kienservice.KienServices.response#CallAPI (Throwable)
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+kienservice_KienServices_response_CallAPI: 15: unable to resolve class RuntimeErrorException
+ @ line 15, column 23.
+                   throw new RuntimeErrorException(null, "Loi vcl" + resspon);
+                         ^
+
+1 error
+
+	at org.moqui.impl.context.ExecutionContextFactoryImpl.compileGroovy(ExecutionContextFactoryImpl.groovy:1065) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.actions.XmlAction.makeGroovyClass(XmlAction.java:101) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.actions.XmlAction.getGroovyClass(XmlAction.java:94) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.actions.XmlAction.run(XmlAction.java:61) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.runner.InlineServiceRunner.runService(InlineServiceRunner.java:59) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.callSingle(ServiceCallSyncImpl.java:322) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.call(ServiceCallSyncImpl.java:125) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions.run(component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions:9) ~[?:?]
+	at org.moqui.impl.actions.XmlAction.run(XmlAction.java:67) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenDefinition$TransitionItem.run(ScreenDefinition.groovy:987) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:749) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.internalRender(ScreenRenderImpl.groovy:454) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.render(ScreenRenderImpl.groovy:170) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.webapp.MoquiServlet.service(MoquiServlet.groovy:118) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750) ~[moqui_temp3927582242763878049WEB-INF_lib_javax.servlet-api-4.0.1.jar.:4.0.1]
+	at org.moqui.impl.webapp.ElasticRequestLogFilter.doFilter(ElasticRequestLogFilter.groovy:96) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+--- 2022-10-12 02:40:21.599 [tp1887699190-56] WARN        org.moqui.impl.context.TransactionFacadeImpl []
+ Transaction rollback for [Error running service kienservice.KienServices.response#CallAPI (Throwable)]. Here is the current location: 
+org.moqui.BaseException: Rollback location
+	at org.moqui.impl.context.TransactionFacadeImpl.rollback(TransactionFacadeImpl.groovy:467) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.context.TransactionFacadeImpl.rollback(TransactionFacadeImpl.groovy:443) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.callSingle(ServiceCallSyncImpl.java:347) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.call(ServiceCallSyncImpl.java:125) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions.run(component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions:9) ~[?:?]
+	at org.moqui.impl.actions.XmlAction.run(XmlAction.java:67) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenDefinition$TransitionItem.run(ScreenDefinition.groovy:987) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:749) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.internalRender(ScreenRenderImpl.groovy:454) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.render(ScreenRenderImpl.groovy:170) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.webapp.MoquiServlet.service(MoquiServlet.groovy:118) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750) ~[moqui_temp3927582242763878049WEB-INF_lib_javax.servlet-api-4.0.1.jar.:4.0.1]
+	at org.moqui.impl.webapp.ElasticRequestLogFilter.doFilter(ElasticRequestLogFilter.groovy:96) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+--- 2022-10-12 02:40:21.601 [tp1887699190-56] WARN          org.moqui.impl.service.ServiceCallSyncImpl []
+ Error running service kienservice.KienServices.response#CallAPI (Throwable) Artifact stack: kienservice.KienServices.response#CallAPI, component://tools/screen/Tools/Service/ServiceRun.xml/run, component://tools/screen/Tools/Service/ServiceRun.xml, component://tools/screen/Tools/Service.xml, component://tools/screen/Tools.xml, component://webroot/screen/webroot/apps.xml, component://webroot/screen/webroot.xml
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+kienservice_KienServices_response_CallAPI: 15: unable to resolve class RuntimeErrorException
+ @ line 15, column 23.
+                   throw new RuntimeErrorException(null, "Loi vcl" + resspon);
+                         ^
+
+1 error
+
+	at org.moqui.impl.context.ExecutionContextFactoryImpl.compileGroovy(ExecutionContextFactoryImpl.groovy:1065) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.actions.XmlAction.makeGroovyClass(XmlAction.java:101) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.actions.XmlAction.getGroovyClass(XmlAction.java:94) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.actions.XmlAction.run(XmlAction.java:61) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.runner.InlineServiceRunner.runService(InlineServiceRunner.java:59) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.callSingle(ServiceCallSyncImpl.java:322) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.service.ServiceCallSyncImpl.call(ServiceCallSyncImpl.java:125) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions.run(component___tools_screen_Tools_Service_ServiceRun_xml_transition_run_actions:9) ~[?:?]
+	at org.moqui.impl.actions.XmlAction.run(XmlAction.java:67) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenDefinition$TransitionItem.run(ScreenDefinition.groovy:987) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:749) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.recursiveRunTransition(ScreenRenderImpl.groovy:745) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.internalRender(ScreenRenderImpl.groovy:454) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.screen.ScreenRenderImpl.render(ScreenRenderImpl.groovy:170) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at org.moqui.impl.webapp.MoquiServlet.service(MoquiServlet.groovy:118) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750) ~[moqui_temp3927582242763878049WEB-INF_lib_javax.servlet-api-4.0.1.jar.:4.0.1]
+	at org.moqui.impl.webapp.ElasticRequestLogFilter.doFilter(ElasticRequestLogFilter.groovy:96) ~[moqui_temp14053187708738812848WEB-INF_lib_moqui-framework-3.0.0.jar.:3.0.0]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+--- 2022-10-12 02:40:21.602 [tp1887699190-56] ERROR           org.moqui.impl.context.MessageFacadeImpl []
+ startup failed:
+kienservice_KienServices_response_CallAPI: 15: unable to resolve class RuntimeErrorException
+ @ line 15, column 23.
+                   throw new RuntimeErrorException(null, "Loi vcl" + resspon);
+                         ^
+
+1 error
+
+--- 2022-10-12 02:40:21.626 [tp1887699190-56] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ Transition apps/tools/Service/ServiceRun/run in 132ms, JSON redirect to: /apps/tools/Service/ServiceRun?doingRun=Y&serviceName=kienservice.KienServices.response%23CallAPI
+--- 2022-10-12 02:41:18.573 [p1887699190-246] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ qapps/tools/Service/ServiceRun [serviceName:kienservice.KienServices.response#CallAPI, submitButton:submitButton, moquiFormName:ServiceParameters, moquiSessionToken:YBNUDkUbCvRhDT9vDB3N, _fileUploadList:[]] in 77ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 02:41:18.748 [tp1887699190-56] INFO                org.moqui.impl.context.WebFacadeImpl []
+ Streamed 1150 bytes from location component://webroot/screen/webroot/favicon.ico
+--- 2022-10-12 02:41:18.997 [p1887699190-136] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools [serviceName:kienservice.KienServices.response#CallAPI] in 231ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 02:41:19.034 [p1887699190-246] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service [serviceName:kienservice.KienServices.response#CallAPI] in 1ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 02:41:19.057 [p1887699190-136] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [serviceName:kienservice.KienServices.response#CallAPI] in 7ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 02:41:20.691 [p1887699190-246] INFO             org.moqui.impl.context.LoggerFacadeImpl []
+ Service Run Results:
+==> outValue: {"coord":{"lon":105.8412,"lat":21.0245},"weather":[{"id":801,"main":"Clouds","description":"few clouds","icon":"02d"}],"base":"stations","main":{"temp":302.15,"feels_like":303.06,"temp_min":302.15,"temp_max":302.15,"pressure":1013,"humidity":52,"sea_level":1013,"grnd_level":1012},"visibility":10000,"wind":{"speed":2.75,"deg":87,"gust":3.9},"clouds":{"all":12},"dt":1665567573,"sys":{"type":1,"id":9308,"country":"VN","sunrise":1665528643,"sunset":1665570926},"timezone":25200,"id":1581130,"name":"Hanoi","cod":200}
+
+--- 2022-10-12 02:41:20.693 [p1887699190-246] WARN              org.moqui.impl.context.ContextJavaUtil []
+ Slow hit to AT_XML_SCREEN:null:component://webroot/screen/webroot.xml running time 1109.2091 is greater than average 39.573852499999994 plus 2.6 standard deviations 65.4464449701462
+--- 2022-10-12 02:41:20.694 [p1887699190-246] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ Transition apps/tools/Service/ServiceRun/run in 1110ms, JSON redirect to: /apps/tools/Service/ServiceRun?doingRun=Y&serviceName=kienservice.KienServices.response%23CallAPI
+--- 2022-10-12 02:41:20.783 [p1887699190-246] INFO              org.moqui.impl.screen.ScreenRenderImpl []
+ apps/tools/Service/ServiceRun [serviceName:kienservice.KienServices.response#CallAPI, submitButton:submitButton, moquiFormName:ServiceParameters, outValue:{"coord":{"lon":105.8412,"lat":21.0245},"weather":[{"id":801,"main":"Clouds","description":"few clouds","icon":"02d"}],"base":"stations","main":{"temp":302.15,"feels_like":303.06,"temp_min":302.15,"temp_max":302.15,"pressure":1013,"humidity":52,"sea_level":1013,"grnd_level":1012},"visibility":10000,"wind":{"speed":2.75,"deg":87,"gust":3.9},"clouds":{"all":12},"dt":1665567573,"sys":{"type":1,"id":9308,"country":"VN","sunrise":1665528643,"sunset":1665570926},"timezone":25200,"id":1581130,"name":"Hanoi","cod":200}, doingRun:Y, moquiSessionToken:YBNUDkUbCvRhDT9vDB3N, _fileUploadList:[]] in 27ms (text/html;charset=utf-8) session node04deq24bqpjqu1avg7fytu5fqq1
+--- 2022-10-12 02:45:01.293 [oquiScheduled-1] INFO           org.moqui.impl.service.ScheduledJobRunner []
+ Running job render_ScheduledScreens_frequent run 100166 (last run 2022-10-12 02:30:01.285, schedule 2022-10-12T02:45-07:00[US/Pacific])
+--- 2022-10-12 02:45:01.295 [oquiScheduled-1] INFO           org.moqui.impl.service.ScheduledJobRunner []
+ Ran 1 Service Jobs starting 2022-10-12T02:45:01.288445600-07:00[US/Pacific] (active: 4, paused: 6)
+--- 2022-10-12 03:00:01.286 [oquiScheduled-1] INFO           org.moqui.impl.service.ScheduledJobRunner []
+ Running job render_ScheduledScreens_frequent run 100167 (last run 2022-10-12 02:45:01.288, schedule 2022-10-12T03:00-07:00[US/Pacific])
+--- 2022-10-12 03:00:01.336 [oquiScheduled-1] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found entities in 10 files in 8ms
+--- 2022-10-12 03:00:01.336 [oquiScheduled-1] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found 0 view-entity definitions in database (DbViewEntity records)
+--- 2022-10-12 03:00:01.353 [oquiScheduled-1] INFO           org.moqui.impl.service.ScheduledJobRunner []
+ Ran 1 Service Jobs starting 2022-10-12T03:00:01.282257600-07:00[US/Pacific] (active: 4, paused: 6)
+--- 2022-10-12 03:15:01.297 [oquiScheduled-1] INFO           org.moqui.impl.service.ScheduledJobRunner []
+ Running job render_ScheduledScreens_frequent run 100168 (last run 2022-10-12 03:00:01.282, schedule 2022-10-12T03:15-07:00[US/Pacific])
+--- 2022-10-12 03:15:01.343 [oquiScheduled-1] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found entities in 10 files in 45ms
+--- 2022-10-12 03:15:01.343 [oquiScheduled-1] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found 0 view-entity definitions in database (DbViewEntity records)
+--- 2022-10-12 03:15:01.344 [oquiScheduled-1] INFO           org.moqui.impl.service.ScheduledJobRunner []
+ Ran 1 Service Jobs starting 2022-10-12T03:15:01.293108-07:00[US/Pacific] (active: 4, paused: 6)
+--- 2022-10-12 03:30:01.293 [oquiScheduled-1] INFO           org.moqui.impl.service.ScheduledJobRunner []
+ Running job render_ScheduledScreens_frequent run 100169 (last run 2022-10-12 03:15:01.293, schedule 2022-10-12T03:30-07:00[US/Pacific])
+--- 2022-10-12 03:30:01.351 [oquiScheduled-1] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found entities in 10 files in 57ms
+--- 2022-10-12 03:30:01.352 [oquiScheduled-1] INFO              org.moqui.impl.entity.EntityFacadeImpl []
+ Found 0 view-entity definitions in database (DbViewEntity records)
+--- 2022-10-12 03:30:01.353 [oquiScheduled-1] INFO           org.moqui.impl.service.ScheduledJobRunner []
+ Ran 1 Service Jobs starting 2022-10-12T03:30:01.291056-07:00[US/Pacific] (active: 4, paused: 6)
